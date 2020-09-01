@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shelf
   - PositionShoppingCart
+  - Head
   layers:
   - Default
   - TransparentFX
