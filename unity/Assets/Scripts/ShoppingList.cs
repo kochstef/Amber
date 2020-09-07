@@ -20,7 +20,8 @@ public class ShoppingList : MonoBehaviour
     
     //For filling the List-------------------------------
     public TextMeshPro textmeshPro;
-    
+
+    public TextMeshPro textMeshProTime;
     //private List<string> allItems;
     //this later should go over the server depending on the level of the patient
     //private int amountOfItems = 6;
@@ -29,6 +30,12 @@ public class ShoppingList : MonoBehaviour
     private GameObject shoppingCart;
     private bool roundHasStarted;
     private bool showAtStart = true;
+    
+    
+    //for the loading animation 
+    public GameObject animationObject;
+    private float scale_y_original;
+    private float scale_z_original;
 
     void Start()
     {
@@ -44,9 +51,14 @@ public class ShoppingList : MonoBehaviour
         listObject.SetActive(true);
         button.SetActive(true);
         isCounting = false;
-        countdown = 3f;
+        countdown = 0.0f;
         Debug.Log(gameObject.name);
         roundHasStarted = false;
+        
+        animationObject.SetActive(false);
+
+        scale_y_original = animationObject.transform.localScale.y;
+        scale_z_original = animationObject.transform.localScale.z;
         //------------------------------------------
         /* allItems = new List<string>();
          allItems.Add("brown cube");
@@ -91,26 +103,39 @@ public class ShoppingList : MonoBehaviour
         else
         {
             isCounting = false;
-            countdown = timeToShowShoppingList;
+            countdown = 0.0f;
             listObject.SetActive(false);
         }
 
-        if (countdown <= 0f)
+        if (countdown >= timeToShowShoppingList)
         {
             if(!listObject.activeSelf)
             {
                 GameManager.instance.IncrementCounterLookedAtList();
             }
+            animationObject.SetActive(false);
             listObject.SetActive(true);
-            
+            //deactivate loading list
         }
 
-        if (isCounting) countdown -= Time.deltaTime;
+        if (isCounting)
+        {
+            countdown += Time.deltaTime;
+            if(!listObject.activeSelf)
+            {
+                float size = ((100 / timeToShowShoppingList) * countdown) / 100;
+                animationObject.SetActive(true);
+                animationObject.transform.localScale = new Vector3(animationObject.transform.localScale.x, scale_y_original * size, scale_z_original* size);
+            }
+        }
+        else
+        {
+            animationObject.SetActive(false);
+        }
     }
 
     public void startRoundHandler()
     {
-       
         Debug.Log("button pushed");
         GameManager.instance.SetTextList();
         // show timer on list
@@ -118,8 +143,7 @@ public class ShoppingList : MonoBehaviour
         // 
         roundHasStarted = true;
         button.SetActive(false);
-      
-
+        
         //listObject.SetActive(false);
     }
 
@@ -148,12 +172,12 @@ public class ShoppingList : MonoBehaviour
                 
                     listObject.SetActive(false);
                     GameManager.instance.trackTime = true;
-                
+                    textMeshProTime.SetText("");
                 }
                 else
                 {
                     Debug.Log("Timer");
-                    textmeshPro.SetText(timeRemaining.ToString());
+                    textMeshProTime.SetText(timeRemaining.ToString());
                     timeRemaining -= Time.deltaTime;
                 }
             }
