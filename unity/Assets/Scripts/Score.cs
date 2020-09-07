@@ -7,16 +7,20 @@ public class Score
     private int correctItems;
     private int forgottenItems;
     private int wrongItems;
+    private float time;
+    private int looksAtList;
     //public float timeNeeded;
-    
-        
-        
-    public Score(int correctItems, int forgottenItems, int wrongItems)
+
+
+
+    public Score(int correctItems, int forgottenItems, int wrongItems, float time, int looksAtList)
     {
         this.correctItems = correctItems;
         this.forgottenItems = forgottenItems;
         this.wrongItems = wrongItems;
-       // this.timeNeeded = timeNeeded;
+        this.time = time;
+        this.looksAtList = looksAtList;
+        // this.timeNeeded = timeNeeded;
     }
 
 
@@ -33,6 +37,16 @@ public class Score
     public int GetWrongItems()
     {
         return wrongItems;
+    }
+
+    public float GetTime()
+    {
+        return time;
+    }
+
+    public int GetLooksAtList()
+    {
+        return looksAtList;
     }
     
 }

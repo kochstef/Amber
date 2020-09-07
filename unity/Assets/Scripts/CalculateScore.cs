@@ -5,7 +5,7 @@ using UnityEngine;
 public static class CalculateScore
 {
     // Start is called before the first frame update
-    public static Score CalcScore(List<string> itemsCollected , Dictionary<string, int> itemsToCollect)
+    public static Score CalcScore(List<string> itemsCollected , Dictionary<string, int> itemsToCollect, float time, int counterLokedAtList)
     {
       //  Debug.Log(shopping_cart.transform.childCount);
 
@@ -38,7 +38,7 @@ public static class CalculateScore
         wrongItems += GetNumberWrongItemsNotOnList(itemsCollected, itemsToCollect);
         
         
-        return new Score(0,forgottenItems,wrongItems);
+        return new Score(0,forgottenItems,wrongItems, time, counterLokedAtList);
     }
 
     private static int GetNumberWrongItemsNotOnList(List<string> itemsCollected, Dictionary<string, int> itemsToCollect)

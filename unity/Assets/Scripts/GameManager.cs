@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject shoppingCart;
     public TextMeshPro exitText;
+    private int counterLokedAtList = 0;
+    public bool trackTime = false;
+    private float time = 0f;
+
 
     protected GameManager()
     {
@@ -51,30 +55,41 @@ public class GameManager : MonoBehaviour
     {
         //startGame();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public void startGame()
+    
+    public void SetTextList()
     {
         ShoppingList.instance.SetText(ParametersForGame.Instance().GetItemsToCollect());
     }
 
-public void endRound()
-    {
-        List<string> itemsInShoppingCart = shoppingCart.GetComponent<ShoppingCart>().GetTagsChildren();
 
-        Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect());
+
+    public void endRound()
+    {
+        ShoppingCart shoppingCartScript = shoppingCart.GetComponent<ShoppingCart>();
+        List<string> itemsInShoppingCart = shoppingCartScript.GetTagsChildren();
+
+        
+        Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect(), time, counterLokedAtList);
+        
+        
         Debug.Log("Round has ended");
         
-        exitText.SetText("You forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much.");
-        Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
+        exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
+                         + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
+      //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
         //calculate points
     }
-    
-    
-    
+
+    public void IncrementCounterLookedAtList()
+    {
+        counterLokedAtList++;
+    }
+
+    void Update()
+    {
+        if(trackTime)
+        {
+            time += Time.deltaTime;
+        }
+    }
 }

@@ -16,17 +16,19 @@ public class ShoppingList : MonoBehaviour
     public float timeToShowShoppingList = 3f;
     private float countdown;
     public GameObject button;
-
+    float timeRemaining = 5f;
+    
     //For filling the List-------------------------------
     public TextMeshPro textmeshPro;
-
+    
     //private List<string> allItems;
     //this later should go over the server depending on the level of the patient
     //private int amountOfItems = 6;
     //private Dictionary<string, int> itemsToCollect;
     //the shoppingcart to check if all items have been collected
     private GameObject shoppingCart;
-
+    private bool roundHasStarted;
+    private bool showAtStart = true;
 
     void Start()
     {
@@ -44,7 +46,7 @@ public class ShoppingList : MonoBehaviour
         isCounting = false;
         countdown = 3f;
         Debug.Log(gameObject.name);
-
+        roundHasStarted = false;
         //------------------------------------------
         /* allItems = new List<string>();
          allItems.Add("brown cube");
@@ -95,7 +97,12 @@ public class ShoppingList : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            if(!listObject.activeSelf)
+            {
+                GameManager.instance.IncrementCounterLookedAtList();
+            }
             listObject.SetActive(true);
+            
         }
 
         if (isCounting) countdown -= Time.deltaTime;
@@ -103,10 +110,17 @@ public class ShoppingList : MonoBehaviour
 
     public void startRoundHandler()
     {
+       
         Debug.Log("button pushed");
-        GameManager.instance.startGame();
+        GameManager.instance.SetTextList();
+        // show timer on list
+        // 
+        // 
+        roundHasStarted = true;
         button.SetActive(false);
-        listObject.SetActive(false);
+      
+
+        //listObject.SetActive(false);
     }
 
 //need something else cant teleport 
@@ -123,10 +137,44 @@ public class ShoppingList : MonoBehaviour
   */
     void Update()
     {
-        if(!button.activeSelf)
+        
+        if(roundHasStarted)
         {
-            ShowList();
+            if(showAtStart)
+            {
+                if ( timeRemaining < 0f)
+                {
+                    showAtStart = false;
+                
+                    listObject.SetActive(false);
+                    GameManager.instance.trackTime = true;
+                
+                }
+                else
+                {
+                    Debug.Log("Timer");
+                    textmeshPro.SetText(timeRemaining.ToString());
+                    timeRemaining -= Time.deltaTime;
+                }
+            }
+            else
+            {
+                ShowList();
+            }
         }
     }
+    
+   /* IEnumerator WaitCoroutine()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(5);
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    }
+    */
     
 }
