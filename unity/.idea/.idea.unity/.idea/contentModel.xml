@@ -16,6 +16,7 @@
           <e p="ShoppingCart.cs" t="Include" />
           <e p="ShoppingList.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="TeleportationPlayer.cs" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">

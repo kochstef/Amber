@@ -10,6 +10,9 @@ TagManager:
   - brown cube
   - green cube
   - exit
+  - Teleportation Platform
+  - Teleportation Point
+  - Teleportation Animation
   layers:
   - Default
   - TransparentFX
