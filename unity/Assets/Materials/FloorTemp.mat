@@ -21,27 +21,27 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 37d69308dc166be4eaa17955470b062d, type: 3}
-        m_Scale: {x: 21, y: 11.5}
+        m_Texture: {fileID: 2800000, guid: bd15cbf11b213724993c257058fc8df6, type: 3}
+        m_Scale: {x: 10, y: 5}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 68ec443882cbc3c4398c0cf5543a9f4a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7d111f7636f98c64eba6256581b34098, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 06f9a3ce2d054ad44bf2cfd381833a4c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 186dbc7c45336f944a80ebfa62ea910f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 37d69308dc166be4eaa17955470b062d, type: 3}
-        m_Scale: {x: 21, y: 11.5}
+        m_Texture: {fileID: 2800000, guid: bd15cbf11b213724993c257058fc8df6, type: 3}
+        m_Scale: {x: 10, y: 5}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 0accb3a818e2ecd45a1b1028bedc8469, type: 3}
+        m_Texture: {fileID: 2800000, guid: 40e8f52cd24fc3a41bb107f320dce707, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -51,7 +51,7 @@ Material:
     m_Floats:
     - _AlphaClip: 1
     - _Blend: 0
-    - _BumpScale: 1
+    - _BumpScale: 5
     - _Cull: 2
     - _Cutoff: 0.5
     - _DstBlend: 0
@@ -59,11 +59,11 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0.1
+    - _Metallic: 0.228
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0.218
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
