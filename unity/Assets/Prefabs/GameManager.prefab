@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e640b1ea8f97c44b64002a4b196de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoppingCart: {fileID: 0}
+  shoppingCart: {fileID: 919132149155446097, guid: 7693f2a8361d12c44a9da8bea870d107, type: 3}
   exitText: {fileID: 0}
   trackTime: 0

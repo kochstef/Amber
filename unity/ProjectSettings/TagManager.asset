@@ -13,6 +13,9 @@ TagManager:
   - Teleportation Platform
   - Teleportation Point
   - Teleportation Animation
+  - Onion
+  - Apple
+  - Orange
   layers:
   - Default
   - TransparentFX
