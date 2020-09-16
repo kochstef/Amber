@@ -16,6 +16,7 @@ TagManager:
   - Onion
   - Apple
   - Orange
+  - Carrot
   layers:
   - Default
   - TransparentFX

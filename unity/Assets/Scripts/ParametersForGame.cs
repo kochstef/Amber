@@ -21,8 +21,10 @@ public class ParametersForGame
     //if you add a item you need to add the tag here
     public List<string> allItems = new List<string>()
     {
-        "brown cube",
-        "green cube"
+        "Onion",
+        "Carrot",
+        "Orange",
+        "Apple"
     };
     private Dictionary<string, int> itemsToCollect = null;
 
