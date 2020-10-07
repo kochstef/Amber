@@ -17,6 +17,7 @@ TagManager:
   - Apple
   - Orange
   - Carrot
+  - Milk
   layers:
   - Default
   - TransparentFX
