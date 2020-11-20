@@ -279,20 +279,25 @@ public class OVRGrabber : MonoBehaviour
                 m_grabbedObjectPosOff = m_gripTransform.localPosition;
                 if(m_grabbedObj.snapOffset)
                 {
-                    Vector3 snapOffset = m_grabbedObj.snapOffset.position;
-                    if (m_controller == OVRInput.Controller.LTouch) snapOffset.x = -snapOffset.x;
-                    m_grabbedObjectPosOff += snapOffset;
+                    //Vector3 snapOffset = m_grabbedObj.snapOffset.position;
+                    //if (m_controller == OVRInput.Controller.LTouch) snapOffset.x = -snapOffset.x;
+                    //m_grabbedObjectPosOff += snapOffset;
+                    
+                    // TODO: CHANGE THIS TO JUST SET POSITION 
+                    Vector3 newPosition = m_grabbedObj.snapOffset.position;
+                    m_lastPos = newPosition;    
                 }
             }
             else
             {
-                Vector3 relPos = m_grabbedObj.transform.position - transform.position;
+                Vector3 relPos =  m_grabbedObj.snapOffset.position;
                 relPos = Quaternion.Inverse(transform.rotation) * relPos;
                 m_grabbedObjectPosOff = relPos;
             }
 
             if (m_grabbedObj.snapOrientation)
             {
+                //TODO: CHANGE THIS TO WICHED ROTATION
                 m_grabbedObjectRotOff = m_gripTransform.localRotation;
                 if(m_grabbedObj.snapOffset)
                 {
@@ -329,7 +334,7 @@ public class OVRGrabber : MonoBehaviour
         }
 
         Rigidbody grabbedRigidbody = m_grabbedObj.grabbedRigidbody;
-        Vector3 grabbablePosition = pos + rot * m_grabbedObjectPosOff;
+        Vector3 grabbablePosition = pos;
         Quaternion grabbableRotation = rot * m_grabbedObjectRotOff;
 
         if (forceTeleport)

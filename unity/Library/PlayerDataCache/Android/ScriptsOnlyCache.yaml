@@ -1965,7 +1965,7 @@ ScriptsOnlyBuild:
     className: LiftGammaGain
   - hash:
       serializedVersion: 2
-      Hash: 0182aac3fd8bfdeff27021b9548c3a6a
+      Hash: 0761f75c8e39f326a1b872f1fa40dba1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ItemGrabbable
