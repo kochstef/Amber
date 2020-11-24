@@ -227,7 +227,7 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
-    protected virtual void GrabBegin()
+    protected virtual GameObject GrabBegin()
     {
         float closestMagSq = float.MaxValue;
 		OVRGrabbable closestGrabbable = null;
@@ -313,7 +313,7 @@ public class OVRGrabber : MonoBehaviour
             // NOTE: force teleport on grab, to avoid high-speed travel to dest which hits a lot of other objects at high
             // speed and sends them flying. The grabbed object may still teleport inside of other objects, but fixing that
             // is beyond the scope of this demo.
-            MoveGrabbedObject(m_lastPos, m_lastRot, true);
+            //MoveGrabbedObject(m_lastPos, m_lastRot, true);
 
             // NOTE: This is to get around having to setup collision layers, but in your own project you might
             // choose to remove this line in favor of your own collision layer setup.
@@ -323,7 +323,11 @@ public class OVRGrabber : MonoBehaviour
             {
                 m_grabbedObj.transform.parent = transform;
             }
+
+            return m_grabbedObj.gameObject;
         }
+
+        return null;
     }
 
     protected virtual void MoveGrabbedObject(Vector3 pos, Quaternion rot, bool forceTeleport = false)

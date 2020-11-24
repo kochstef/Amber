@@ -133,7 +133,7 @@ namespace OculusSampleFramework
             }
         }
 
-        protected override void GrabBegin()
+        protected override GameObject GrabBegin()
         {
             DistanceGrabbable closestGrabbable = m_target;
             Collider closestGrabbableCollider = m_targetCollider;
@@ -185,6 +185,8 @@ namespace OculusSampleFramework
                 }
 
             }
+
+            return null;
         }
 
         protected override void MoveGrabbedObject(Vector3 pos, Quaternion rot, bool forceTeleport = false)
