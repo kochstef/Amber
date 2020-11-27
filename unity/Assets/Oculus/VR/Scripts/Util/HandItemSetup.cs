@@ -12,7 +12,7 @@ public class HandItemSetup : OVRGrabber
 
     public GameObject itemToSetUP;
 
-    private ItemGrabbable itemGrabbable;
+    private GrabbableItem _grabbableItem;
 
    
     
@@ -20,6 +20,8 @@ public class HandItemSetup : OVRGrabber
     private string handPose = "";
     
     private List<OVRBone> _bones;
+
+    private Transform _transform;
    // public List<OVRBone> _bones;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class HandItemSetup : OVRGrabber
         base.Start();
         m_hand = GetComponent<OVRHand>();
         _ovrSkeleton = GetComponent<OVRSkeleton>();
-        itemGrabbable = itemToSetUP.GetComponent<ItemGrabbable>();
+        _grabbableItem = itemToSetUP.GetComponent<GrabbableItem>();
     }
 
     // Update is called once per frame
@@ -52,7 +54,13 @@ public class HandItemSetup : OVRGrabber
             _bones = deepCopyHandPose(_ovrSkeleton.getHandPose());
             
             SerializedHand test = Serializer.serializeBones(_bones);
-            itemToSetUP.GetComponent<ItemGrabbable>().handPose =  JsonUtility.ToJson(test);
+            itemToSetUP.transform.parent = transform;
+            itemToSetUP.GetComponent<GrabbableItem>().handPose =  JsonUtility.ToJson(test);
+            itemToSetUP.GetComponent<GrabbableItem>().position = itemToSetUP.transform.localPosition;
+            itemToSetUP.GetComponent<GrabbableItem>().rotation = itemToSetUP.transform.localRotation;
+            itemToSetUP.GetComponent<GrabbableItem>()._bones = _bones;
+            _ovrSkeleton.getDataFromItem = true;
+            GrabBegin();
             //Debug.Log(Application.persistentDataPath);
             print("space key was pressed");
             //print(_bones);

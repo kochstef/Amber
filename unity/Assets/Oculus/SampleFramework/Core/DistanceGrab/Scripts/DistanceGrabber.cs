@@ -144,11 +144,11 @@ namespace OculusSampleFramework
             {
                 if (closestGrabbable.isGrabbed)
                 {
-                    ((DistanceGrabber)closestGrabbable.grabbedBy).OffhandGrabbed(closestGrabbable);
+                   // ((DistanceGrabber)closestGrabbable.grabbedBy).OffhandGrabbed(closestGrabbable);
                 }
 
                 m_grabbedObj = closestGrabbable;
-                m_grabbedObj.GrabBegin(this, closestGrabbableCollider);
+              //  m_grabbedObj.GrabBegin(this, closestGrabbableCollider);
                 SetPlayerIgnoreCollision(m_grabbedObj.gameObject, true);
 
                 m_movingObjectToHand = true;

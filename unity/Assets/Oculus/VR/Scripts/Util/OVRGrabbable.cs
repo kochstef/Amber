@@ -34,8 +34,8 @@ public class OVRGrabbable : MonoBehaviour
     protected Collider[] m_grabPoints = null;
 
     protected bool m_grabbedKinematic = false;
-    protected Collider m_grabbedCollider = null;
-    protected OVRGrabber m_grabbedBy = null;
+    public Collider m_grabbedCollider = null;
+    public HandGrabbingBehavior m_grabbedBy = null;
 
 	/// <summary>
 	/// If true, the object can currently be grabbed.
@@ -80,7 +80,7 @@ public class OVRGrabbable : MonoBehaviour
 	/// <summary>
 	/// Returns the OVRGrabber currently grabbing this object.
 	/// </summary>
-    public OVRGrabber grabbedBy
+    public HandGrabbingBehavior grabbedBy
     {
         get { return m_grabbedBy; }
     }
@@ -112,7 +112,7 @@ public class OVRGrabbable : MonoBehaviour
 	/// <summary>
 	/// Notifies the object that it has been grabbed.
 	/// </summary>
-	virtual public void GrabBegin(OVRGrabber hand, Collider grabPoint)
+	virtual public void GrabBegin(HandGrabbingBehavior hand, Collider grabPoint)
     {
         m_grabbedBy = hand;
         m_grabbedCollider = grabPoint;
@@ -158,7 +158,7 @@ public class OVRGrabbable : MonoBehaviour
         if (m_grabbedBy != null)
         {
             // Notify the hand to release destroyed grabbables
-            m_grabbedBy.ForceRelease(this);
+            m_grabbedBy.GrabEnd();
         }
     }
 }
