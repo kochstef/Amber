@@ -12,10 +12,10 @@ public class HandItemSetup : HandGrabbingBehavior
 
     private OVRSkeleton _ovrSkeleton;
 
-    public IEnumerable<GameObject> _itemsToSetUp;
-    public GameObject itemToSetUP;  
+    public List<GameObject> _itemsToSetUp;
+    public GameObject itemToSetUP;
 
-    private GrabbableItem _grabbableItem;
+    private GameObject _grabbableItem;
 
 
     private string handPose = "";
@@ -24,6 +24,8 @@ public class HandItemSetup : HandGrabbingBehavior
 
     private Transform _transform;
 
+    private int indexCurrentItem = 0;
+
     // public List<OVRBone> _bones;
     // Start is called before the first frame update
     void Start()
@@ -31,36 +33,63 @@ public class HandItemSetup : HandGrabbingBehavior
         base.Start();
         m_hand = GetComponent<OVRHand>();
         _ovrSkeleton = GetComponent<OVRSkeleton>();
-       // _grabbableItem = itemToSetUP.GetComponent<GrabbableItem>();
-            
+        _itemsToSetUp = new List<GameObject>();
+        GameObject[] tmpItemsToSetUp = null; 
+        try
+        {
+            tmpItemsToSetUp = Resources.LoadAll("ItemsToSetup", typeof(GameObject)).Cast<GameObject>().ToArray();
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+
+
+        foreach (var setUpItem in tmpItemsToSetUp)
+        {
+            Debug.Log("dölkfjasöldfjaklösdflköjajslköfdlköjashdlöjk");
             try
             {
-                _itemsToSetUp = Resources.LoadAll("ItemsToSetup", typeof(GameObject)).Cast<GameObject>();
+                //GameObject contentsRoot = PrefabUtility.LoadPrefabContents(Application.dataPath + "/Resources/ItemsToSetup/" + ölkj.name  + ".prefab");
+                //Debug.Log(contentsRoot.name);
+                //we need do unpack it to be able to delete the other items. 
+                GameObject instanceRoot = (GameObject) PrefabUtility.InstantiatePrefab(setUpItem);
+
+                PrefabUtility.UnpackPrefabInstance(instanceRoot, PrefabUnpackMode.Completely,
+                    InteractionMode.AutomatedAction);
+                _itemsToSetUp.Add(instanceRoot);
+                instanceRoot.SetActive(false);
+                Debug.Log(setUpItem.name);
             }
             catch (Exception e)
             {
-                Debug.Log(e.Message);
+                Debug.Log(e);
             }
-            
-            //_itemsToSetUp = Resources.LoadAll("pls").Cast<GameObject>().ToArray();
-            //_itemsToSetUp = Resources.LoadAll<GameObject>("pls");
-            
+        }
+
+        indexCurrentItem = 0;
+        itemToSetUP = _itemsToSetUp[indexCurrentItem];
+        if(GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight)
+        {
+            itemToSetUP.SetActive(true);
+        }
+        //_itemsToSetUp = Resources.LoadAll("pls").Cast<GameObject>().ToArray();
+        //_itemsToSetUp = Resources.LoadAll<GameObject>("pls");
     }
 
     // Update is called once per frame
     void Update()
     {
         //base.Update();
-        //checkForSetupOfHandPose();
+        checkForSetupOfHandPose();
     }
 
 
     void checkForSetupOfHandPose()
     {
         //this code to get the pose of the hand and the offset of
-
         //the position of the object relative to the hand
-        if (Input.GetKeyDown("space") && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandLeft )
+        if (Input.GetKeyDown("space") && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandLeft)
         {
             if (_ovrSkeleton.getDataFromItem == false)
             {
@@ -74,7 +103,7 @@ public class HandItemSetup : HandGrabbingBehavior
                 itemToSetUP.GetComponent<GrabbableItem>()._positionLeft = itemToSetUP.transform.localPosition;
 
                 itemToSetUP.GetComponent<GrabbableItem>()._handPoseLeft = JsonUtility.ToJson(test);
-                
+
                 _ovrSkeleton.getDataFromItem = true;
                 GrabBegin();
                 //Debug.Log(Application.persistentDataPath);
@@ -89,7 +118,7 @@ public class HandItemSetup : HandGrabbingBehavior
         }
         //if(_bones != null) Debug.Log(_bones[1].Transform.right);
 
-        if (Input.GetKeyDown(KeyCode.Return) && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight )
+        if (Input.GetKeyDown(KeyCode.Return) && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight)
         {
             if (_ovrSkeleton.getDataFromItem == false)
             {
@@ -111,9 +140,43 @@ public class HandItemSetup : HandGrabbingBehavior
                 GrabEnd();
             }
         }
-        
-        
-        if (Input.GetKeyDown(KeyCode.E))
+
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight)
+        {
+            itemToSetUP.SetActive(false);
+            indexCurrentItem += 1;
+            if (indexCurrentItem < _itemsToSetUp.Count)
+            {
+                itemToSetUP = _itemsToSetUp[indexCurrentItem];
+            }
+            else
+            {
+                indexCurrentItem = 0;
+                itemToSetUP = _itemsToSetUp[indexCurrentItem];
+            }
+            itemToSetUP.SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight)
+        {
+            itemToSetUP.SetActive(false);
+            indexCurrentItem -= 1;
+            if (indexCurrentItem >= 0)
+            {
+                itemToSetUP = _itemsToSetUp[indexCurrentItem];
+            }
+            else
+            {
+                indexCurrentItem = _itemsToSetUp.Count - 1;
+                itemToSetUP = _itemsToSetUp[indexCurrentItem];
+                
+            }
+            itemToSetUP.SetActive(true);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.E) && GetComponent<OVRHand>().HandType == OVRHand.Hand.HandRight)
         {
             foreach (var setUpItem in _itemsToSetUp)
             {
@@ -122,10 +185,12 @@ public class HandItemSetup : HandGrabbingBehavior
                     //GameObject contentsRoot = PrefabUtility.LoadPrefabContents(Application.dataPath + "/Resources/ItemsToSetup/" + ölkj.name  + ".prefab");
                     //Debug.Log(contentsRoot.name);
                     //we need do unpack it to be able to delete the other items. 
-                    GameObject instanceRoot = (GameObject)PrefabUtility.InstantiatePrefab(setUpItem);
-                    PrefabUtility.UnpackPrefabInstance(instanceRoot, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction); 
+                    GameObject instanceRoot = (GameObject) PrefabUtility.InstantiatePrefab(setUpItem);
+                    PrefabUtility.UnpackPrefabInstance(instanceRoot, PrefabUnpackMode.Completely,
+                        InteractionMode.AutomatedAction);
 
-                    PrefabUtility.SaveAsPrefabAsset(instanceRoot, Application.dataPath + "/Resources/SetupItems/" + instanceRoot.name  + ".prefab");
+                    PrefabUtility.SaveAsPrefabAsset(instanceRoot,
+                        Application.dataPath + "/Resources/SetupItems/" + instanceRoot.name + ".prefab");
                     Debug.Log(setUpItem.name);
                 }
                 catch (Exception e)
