@@ -7,6 +7,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class HandGrabbingBehavior : MonoBehaviour
 {
+   
+    
     public OVRGrabbable m_grabbedObj = null;
     public List<OVRBone> _bones;
     
@@ -14,15 +16,6 @@ public class HandGrabbingBehavior : MonoBehaviour
     private float pinchThreshhold = 0.2f;
     private OVRSkeleton _ovrSkeleton;
     private Dictionary<OVRGrabbable, int> m_grabCandidates = new Dictionary<OVRGrabbable, int>();
-    private Transform m_gripTransform = null;
-    private Collider[] m_grabVolumes;
-    private bool m_grabVolumeEnabled = false;
-    //
-    private bool m_moveHandPosition = false;
-  //  private OVRGrabbable m_grabbedObj = null;
-    // Start is called before the first frame update
-
-
     //private GameObject grabbedObject;
 
     protected virtual void Awake()
@@ -41,7 +34,7 @@ public class HandGrabbingBehavior : MonoBehaviour
     //m_grabCandidates
 
 
-    void Start()
+    protected void Start()
     {
         //base.Start();
         m_hand = GetComponent<OVRHand>();
@@ -67,9 +60,19 @@ public class HandGrabbingBehavior : MonoBehaviour
             m_grabbedObj = GrabBegin();
         }
         else if (m_grabbedObj && !(pinchStrength > pinchThreshhold))
-        { 
-            GrabEnd();
-            //GrabVolumeEnable(true);
+        {
+            //if the object is grabbed by this hand release object
+            //has grabbed it from this hand just update skeleton again and set the grabbed object to null
+            //because its now in the other hand 
+            if (m_grabbedObj.grabbedBy == this)
+            {
+                GrabEnd();
+            }
+            else
+            {
+                m_grabbedObj = null;
+                _ovrSkeleton.getDataFromItem = false;
+            }
         }
     }
 
@@ -115,8 +118,19 @@ public class HandGrabbingBehavior : MonoBehaviour
 
     void moveItemToHand()
     {
-        m_grabbedObj.transform.localPosition = m_grabbedObj.GetComponent<GrabbableItem>().position;
-        m_grabbedObj.transform.localRotation = m_grabbedObj.GetComponent<GrabbableItem>().rotation;
+        switch (GetComponent<OVRHand>().HandType)
+        {
+            case OVRHand.Hand.HandLeft:
+                m_grabbedObj.transform.localRotation = m_grabbedObj.GetComponent<GrabbableItem>()._rotationLeft;
+                m_grabbedObj.transform.localPosition = m_grabbedObj.GetComponent<GrabbableItem>()._positionLeft;
+                break;
+            case OVRHand.Hand.HandRight:
+                //m_grabbedObj.transform.localRotation = m_grabbedObj.GetComponent<GrabbableItem>().rotation;
+                
+                m_grabbedObj.transform.localRotation = m_grabbedObj.GetComponent<GrabbableItem>()._rotationRight;
+                m_grabbedObj.transform.localPosition = m_grabbedObj.GetComponent<GrabbableItem>()._positionRight;
+                break;
+        }
     }
 
     protected virtual OVRGrabbable GrabBegin()
@@ -127,11 +141,7 @@ public class HandGrabbingBehavior : MonoBehaviour
         // Iterate grab candidates and find the closest grabbable candidate
         findClosestGrabbable(ref closestGrabbable, ref closestGrabbableCollider);
         
-        // Disable grab volumes to prevent overlaps
-        
-        //TODO: NOT SURE IF THIS IS SUFICE
-        //GrabVolumeEnable(false);
-        //------------------------------------------------
+     
         
         if (closestGrabbable == null) return null;
         
@@ -152,12 +162,26 @@ public class HandGrabbingBehavior : MonoBehaviour
         //Move to right position and rotation
         moveItemToHand(); 
         //set the gesture for holding the item
-        _bones = m_grabbedObj.GetComponent<GrabbableItem>()._bones; 
+        switch (GetComponent<OVRHand>().HandType)
+        {
+            case OVRHand.Hand.HandLeft:
+                _bones = m_grabbedObj.GetComponent<GrabbableItem>()._bonesLeft;
+                break;
+            case OVRHand.Hand.HandRight:
+                _bones = m_grabbedObj.GetComponent<GrabbableItem>()._bonesRight;
+                break;
+        }
+       
+        if(_bones == null)
+        {
+            Debug.Log("You did not setup a pose for this grabbable Item.");
+        }
         _ovrSkeleton.getDataFromItem = true; 
         return m_grabbedObj;
         
     }
-
+    
+    
     public void GrabEnd()
     {
         Rigidbody rb = m_grabbedObj.GetComponent<GrabbableItem>().GetComponent<Rigidbody>();
@@ -229,24 +253,4 @@ public class HandGrabbingBehavior : MonoBehaviour
     }
     
     //WE now now that this ugly code is completely  useless 
-    private void GrabVolumeEnable(bool enabled)
-    {
-        if (m_grabVolumeEnabled == enabled)
-        {
-            return;
-        }
-
-        m_grabVolumeEnabled = enabled;
-        foreach (var grabVolume in m_grabVolumes)
-        {
-            grabVolume.enabled = m_grabVolumeEnabled;
-        }
-
-        if (!m_grabVolumeEnabled)
-        {
-            m_grabCandidates.Clear();
-        }
-    }
-
-
 }

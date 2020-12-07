@@ -48,8 +48,7 @@ public class OVRHand : MonoBehaviour,
 		High = OVRPlugin.TrackingConfidence.High
 	}
 
-	[SerializeField]
-	private Hand HandType = Hand.None;
+	[SerializeField] public Hand HandType = Hand.None;
 	[SerializeField]
 	private Transform _pointerPoseRoot = null;
 	private GameObject _pointerPoseGO;

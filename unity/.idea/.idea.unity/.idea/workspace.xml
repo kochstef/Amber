@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -37,42 +40,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/ColorGrabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/ColorGrabbable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fbx/carrot.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fbx/carrot.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemGrabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemGrabbable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRHand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRHand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/carrot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/carrot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop/ReflectionProbe-0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop/ReflectionProbe-0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop/ReflectionProbe-1.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop/ReflectionProbe-1.exr.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/17/177e3329b314f39cdf72e77bc31ba845" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/28/2856c849afa4e4035bda2e753b28cf1e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/58/58f922e7c30f6a8fabdd97891ee3815b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5cfb1cba615d28c4a00a5e9df36022ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/6617aeb6c19e9e1526321190f5fc4342" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7c/7cd636e54689a98cf81b485edd91bbe2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8c/8c55577cfc6958409b62daf413bc550c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9a/9aacc257e59ddfe4b5205b0a9a9fdf52" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ad/adf218baf13eb02d37f9e9293865fe8f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b6/b64a6dc844d7c34d2bfb330fa5605760" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d1839aa2fd75d8bbfefab8cc94ee8fb6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f2/f22cd30d031e450d75bca9ec0fd272ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/10/10ca6582dee601dddf5ec22a946c9345" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/11/112cb6f38c8a12cc63bafc093f75172f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23b78055a3f84a6c7beed30da498b324" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2a/2a75b3796ea44353b0bc3f24cf7052a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2c70113964bb07c07741375c365cc48a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2f/2f1b25a4d2a91c409c6e9d79ef6a335c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/35/3573966819d5cf19b2d7d382b75561e6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3b/3bfe7b5e30651ba80fc73ef1c0b8ddfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/44/4469ff15650b62ae011ef02ca88661c2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/45f533d210409a758e50d89e6ed5ecd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/59/592fd1f34282da5e8000cdbee1fe5caa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5b/5beada956982c07c336f122b1a6035fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6d/6d047e6b293bef2585f99b988fb81cc5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/74ed00c6c1c10c3e9355769222b42eff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/75/75cd4c6b4159bfdcf814fdc76b681668" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7b/7becd331e6d839971f585f9f0b78bcd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7d/7d5fd4ab6b49f75167f1f64eb21ffe26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/95f3600ccd46b4f9d66bbe7eca763b82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/96/962a95351c96329db39a8f7e62bdf418" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/99/991387e648f7d997e02518c710b03a1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa7ae53b18c98bd05e5e55262c02f53c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/af/afccb9ade9d62358432943050f675d12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2cda3b87e89931b78d5c9a55ef6df05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c59b76e6f9107c59366aa06b894ee8af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c5b1d7acb27935ba60037b1bd3feae30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cca4ea9de188eacc26a89d4a68ef070e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d32ec08ae2265c295da93aa972487f95" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ef/ef040243b977e185d17e51fd8c039dac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fd/fd766bbbc6f5d8d3ee39e9517261e7c7" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorOnlyScriptingSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorOnlyScriptingSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.Platform.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.Platform.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.Platform.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.Platform.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.Scripts.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.Scripts.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Searcher.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Searcher.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.ShaderGraph.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Management.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Management.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Oculus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.XR.Oculus.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/9c/9ceb10bc14f782780cdec8a0bcb90668.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/9c/9ceb10bc14f782780cdec8a0bcb90668.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +151,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/29/1d03abad/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/fb/6b6feaf3/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/8c/c1675beb/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/65/3595e36c/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/4f/053d4227/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/f2/a50ce978/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/ad/bfa02973/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F8918D0C-C5FC-41A1-BABA-01B207A4C016/06/d643bec6/Collider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB4ED992-9FE0-4849-BBE2-B059CBA4D31F/7b/06dfd56e/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,12 +169,12 @@
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/Serializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemGrabbable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
       </list>
     </option>
   </component>
@@ -116,6 +185,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34950384" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29988974" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -123,11 +194,11 @@
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11008">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11008" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -158,6 +229,12 @@
       <workItem from="1606349365457" duration="8743000" />
       <workItem from="1606390194198" duration="1896000" />
       <workItem from="1606431378516" duration="10740000" />
+      <workItem from="1606951961190" duration="24000" />
+      <workItem from="1607113282315" duration="2881000" />
+      <workItem from="1607122689836" duration="8195000" />
+      <workItem from="1607202377709" duration="6041000" />
+      <workItem from="1607277997309" duration="2833000" />
+      <workItem from="1607296850527" duration="8857000" />
     </task>
     <servers />
   </component>
@@ -182,6 +259,78 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="938" height="375" key="GridCell.Tab.0.bottom" timestamp="1607299932973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932973" />
+    <state width="938" height="375" key="GridCell.Tab.0.center" timestamp="1607299932973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932973" />
+    <state width="938" height="375" key="GridCell.Tab.0.left" timestamp="1607299932973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932973" />
+    <state width="938" height="375" key="GridCell.Tab.0.right" timestamp="1607299932973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932973" />
+    <state width="938" height="375" key="GridCell.Tab.1.bottom" timestamp="1607299937056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607299937056" />
+    <state width="938" height="375" key="GridCell.Tab.1.center" timestamp="1607299937056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607299937056" />
+    <state width="938" height="375" key="GridCell.Tab.1.left" timestamp="1607299937056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607299937056" />
+    <state width="938" height="375" key="GridCell.Tab.1.right" timestamp="1607299937056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607299937056" />
+    <state width="938" height="375" key="GridCell.Tab.2.bottom" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.2.center" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.2.left" timestamp="1607299932837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932837" />
+    <state width="938" height="375" key="GridCell.Tab.2.right" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.3.bottom" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.3.center" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.3.left" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state width="938" height="375" key="GridCell.Tab.3.right" timestamp="1607299932838">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607299932838" />
+    <state x="794" y="235" key="RiderGenerateDialog" timestamp="1607129042031">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607129042031" />
+    <state x="766" y="229" key="RollbackChangesDialog" timestamp="1607123449962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="766" y="229" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607123449962" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1606250919049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,14 +343,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="119" width="666" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606442609485" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1606443328461">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1607202920768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606443328461" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606444037866">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607202920768" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607306187543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606444037866" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607306187543" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,6 +367,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs</url>
+          <line>102</line>
+          <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\HandGrabbingBehavior.cs" initialLine="102">
+            <startOffsets>
+              <option value="3188" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3241" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\HandItemSetup.cs" initialLine="36">
+            <startOffsets>
+              <option value="901" />
+            </startOffsets>
+            <endOffsets>
+              <option value="977" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs</url>
+          <line>115</line>
+          <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\HandItemSetup.cs" initialLine="136">
+            <startOffsets>
+              <option value="3970" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4001" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
