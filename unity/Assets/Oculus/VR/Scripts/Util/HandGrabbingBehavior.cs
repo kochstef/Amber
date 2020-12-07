@@ -133,7 +133,7 @@ public class HandGrabbingBehavior : MonoBehaviour
         }
     }
 
-    protected virtual OVRGrabbable GrabBegin()
+    public virtual OVRGrabbable GrabBegin()
     {
         OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;

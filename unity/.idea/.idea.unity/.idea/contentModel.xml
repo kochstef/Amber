@@ -717,6 +717,7 @@
                 <e p="GrabbableItem.cs" t="Include" />
                 <e p="HandGrabbingBehavior.cs" t="Include" />
                 <e p="HandItemSetup.cs" t="Include" />
+                <e p="ItemSetupManager.cs" t="Include" />
                 <e p="OVRAudioSourceTest.cs" t="Include" />
                 <e p="OVRAutoDestroyInMRC.cs" t="Include" />
                 <e p="OVRChromaticAberration.cs" t="Include" />
