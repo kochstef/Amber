@@ -773,7 +773,14 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CalculateScore.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="ParametersForGame.cs" t="Include" />
+          <e p="Score.cs" t="Include" />
+          <e p="ShoppingCart.cs" t="Include" />
+          <e p="ShoppingList.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="TeleportationPlayer.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
