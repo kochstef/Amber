@@ -1,84 +1,55 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TeleportationPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool isCounting = false;
-    private float countdown = 0f;
-    private float timeTillTeleport = 2f;
+
+    public float timeTillTeleport = 2f;
+
     public Transform cam;
-  //  [SerializeField] private float distanceOfRay;
+
+    //  [SerializeField] private float distanceOfRay;
+    private float countdown = 0.0f;
     private GameObject animationObject;
-    private GameObject tempObject;
+    private GameObject tempObject = null;
     private Transform teleportPosition;
-    
+
     private float scaleXOriginal;
     private float scaleZOriginal;
-    
-    void Start()
-    {
-       
-       
-    }
-    
-    
-    
+
+
     public Transform CheckTeleport()
     {
         RaycastHit hit;
         Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
-       // var endPosition = cam.transform.position + transform.forward * distanceOfRay;
         
-       // Debug.DrawLine(transform.position, endPosition, Color.magenta);
-       /* if (Physics.Raycast(ray, out hit)) {
-            Transform objectHit = hit.transform;
-            
-            // Do something with the object that was hit by the raycast.
-        }
-        */
+        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100) &&
+            hit.collider.CompareTag("Teleportation Platform"))
+        {
+            countdown += Time.deltaTime;
+            simpleAnimation(hit);
 
-        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100) && hit.collider.CompareTag("Teleportation Platform"))
-        {
-            Debug.Log("ölkasdf");
-            isCounting = true;
-        }
-        else
-        {
-            if (tempObject != null)
+            if (countdown < timeTillTeleport)
             {
-                animationObject = null;
-                Destroy(tempObject);
+                return null;
             }
-
-            isCounting = false;
-            countdown = 0.0f;
-            return null;
-            //listObject.SetActive(false);
-        }
-
-        if (countdown >= timeTillTeleport)
-        {
-            if (tempObject != null)
-            {
-                animationObject = null;
-                Destroy(tempObject);
-            }
-
+            stopSimpleAnimation();
             return teleportPosition;
-            /* if(!listObject.activeSelf)
-             {
-                 GameManager.instance.IncrementCounterLookedAtList();
-             }
-             animationObject.SetActive(false);
-             listObject.SetActive(true);*/
-            //deactivate loading list
         }
 
-        if (isCounting)
+        stopSimpleAnimation();
+        countdown = 0.0f;
+        return null;
+    }
+
+    private void simpleAnimation(RaycastHit hit)
+    {
+        if (animationObject == null)
         {
-            foreach (Transform trans in hit.transform)
+            foreach (Transform trans in hit.collider.transform)
             {
                 if (trans.CompareTag("Teleportation Animation"))
                 {
@@ -93,38 +64,31 @@ public class TeleportationPlayer : MonoBehaviour
                     teleportPosition = trans;
                 }
             }
-            if(tempObject == null)
-            {
-                tempObject = Instantiate(animationObject, hit.collider.transform.position, Quaternion.identity);
-               // tempObject.transform.SetParent(hit.transform, false);
-
-                tempObject.GetComponent<MeshRenderer>().enabled = true;
-            }
-            countdown += Time.deltaTime;
-            
-            simpleAnimation();
         }
-        else
+
+        if (tempObject == null)
         {
-           if(tempObject != null)
-           {
-               animationObject = null;
-                Destroy(tempObject);
-           }
+            Debug.Log("Intatiate Animation object");
+            tempObject = Instantiate(animationObject, teleportPosition.position, Quaternion.identity);
+            // tempObject.transform.SetParent(hit.transform, false);
+            tempObject.GetComponent<MeshRenderer>().enabled = true;
         }
-        
-    
 
-        return null;
-    }
 
-    private void simpleAnimation()
-    {
         float size = ((100 / timeTillTeleport) * countdown) / 100;
-                
-        tempObject.transform.localScale = new Vector3(scaleXOriginal * size, tempObject.transform.localScale.y , scaleZOriginal* size);
-
+        tempObject.transform.localScale = new Vector3(scaleXOriginal * size, tempObject.transform.localScale.y,
+            scaleZOriginal * size);
     }
+
+    private void stopSimpleAnimation()
+    {
+        if (tempObject != null)
+        {
+            animationObject = null;
+            Destroy(tempObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -132,7 +96,7 @@ public class TeleportationPlayer : MonoBehaviour
         if (teleport_point != null)
         {
             Debug.Log("Teleport");
-           transform.position = new Vector3(teleport_point.position.x, transform.position.y, teleport_point.position.z);
+            transform.position = new Vector3(teleport_point.position.x, transform.position.y, teleport_point.position.z);
         }
     }
 }
