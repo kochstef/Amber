@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Carrot
+  - Onion
+  - Apple
+  - Teleportation Platform
+  - Teleportation Animation
+  - Teleportation Point
+  - Shelf
+  - PositionShoppingCart
+  - Head
   layers:
   - Default
   - TransparentFX

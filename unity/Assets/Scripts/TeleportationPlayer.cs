@@ -69,7 +69,7 @@ public class TeleportationPlayer : MonoBehaviour
         if (tempObject == null)
         {
             Debug.Log("Intatiate Animation object");
-            tempObject = Instantiate(animationObject, teleportPosition.position, Quaternion.identity);
+            tempObject = Instantiate(animationObject, hit.collider.transform.position, Quaternion.identity);
             // tempObject.transform.SetParent(hit.transform, false);
             tempObject.GetComponent<MeshRenderer>().enabled = true;
         }

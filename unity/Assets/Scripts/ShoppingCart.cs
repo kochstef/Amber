@@ -11,7 +11,7 @@ public class ShoppingCart : MonoBehaviour
     public float distanceTillTeleport = 1f;
     
 
-    //TODO: NEED TO CARE ABOUT THE CASE NO POSITION TO TELEPORT LATER
+    
     private GameObject findClosestShelf()
     {
         GameObject[] gos;

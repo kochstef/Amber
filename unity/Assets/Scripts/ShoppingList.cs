@@ -95,8 +95,8 @@ public class ShoppingList : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.left);
         // Debug.DrawLine(transform.position, fwd, Color.green);
         RaycastHit hit;
-
-        if (Physics.Raycast(transform.position, fwd, out hit, 10) && hit.collider.CompareTag("Head"))
+        Debug.DrawRay(transform.position,-transform.forward, Color.green);
+        if (Physics.Raycast(transform.position, -transform.forward, out hit, 10) && hit.collider.CompareTag("Head"))
         {
             isCounting = true;
         }
