@@ -13,6 +13,11 @@ TagManager:
   - Shelf
   - PositionShoppingCart
   - Head
+  - Teleportation Platform Cashier
+  - Shopping Cart Position Cashier
+  - Orange
+  - Milk
+  - CocaCola
   layers:
   - Default
   - TransparentFX
@@ -22,7 +27,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Post Processing
   - 
   - 
   - 

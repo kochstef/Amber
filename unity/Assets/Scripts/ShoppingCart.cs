@@ -12,7 +12,7 @@ public class ShoppingCart : MonoBehaviour
     
 
     
-    private GameObject findClosestShelf()
+    /*private GameObject findClosestShelf()
     {
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("PositionShoppingCart");
@@ -30,8 +30,8 @@ public class ShoppingCart : MonoBehaviour
             }
         }
         return closest;
-    }
-    
+    }*/
+    /*
     private void teleportShopingCart()
     {
         //Debug.Log("TeleportShoppingCart");
@@ -45,7 +45,7 @@ public class ShoppingCart : MonoBehaviour
         {
             teleportShopingCart();
         }
-    }
+    }*/
 
     private void OnCollisionEnter(Collision other)
     {

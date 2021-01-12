@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class ItemSetupManager : MonoBehaviour
 {
+    //TODO: Undo comment crashes unrelated build dont know why
 
     public HandItemSetup itemSetupLeft;
     public HandItemSetup itemSetupRight;

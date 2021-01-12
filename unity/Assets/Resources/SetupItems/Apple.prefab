@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4811612566515698535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5300060073300136413}
+  - component: {fileID: 9088900781285187192}
+  - component: {fileID: 6469056182959401650}
+  - component: {fileID: 8711451097331853242}
+  - component: {fileID: 5997307785669629545}
+  - component: {fileID: 7658413499117888696}
+  m_Layer: 0
+  m_Name: Apple
+  m_TagString: Apple
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5300060073300136413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  m_LocalRotation: {x: 0.21714948, y: 0.07966819, z: -0.08031026, w: -0.96956146}
+  m_LocalPosition: {x: -0.13119844, y: -0.652458, z: 0.45812076}
+  m_LocalScale: {x: 60.000008, y: 59.999992, z: 59.99998}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &9088900781285187192
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  m_Mesh: {fileID: -3645058858012553506, guid: 1f3db7bb623c7384abb087b9c7e51948, type: 3}
+--- !u!23 &6469056182959401650
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6982335028775726171, guid: 1f3db7bb623c7384abb087b9c7e51948, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8711451097331853242
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!135 &5997307785669629545
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.00064967
+  m_Center: {x: 0.000021820393, y: 0.000035207748, z: 0.00001036629}
+--- !u!114 &7658413499117888696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4811612566515698535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189ed75d2c2c6d24c960b392270a937f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints:
+  - {fileID: 5997307785669629545}
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
+  _handPoseLeft: '{"_serializedBones":[{"BoneID":0,"serializedTransform":{"_position":[0.0,0.0,0.0],"_rotation":[0.0,1.0,0.0,0.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":-1},{"BoneID":1,"serializedTransform":{"_position":[0.0,0.0,0.0],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":2,"serializedTransform":{"_position":[-0.0200693029910326,0.01155409961938858,-0.010496520437300206],"_rotation":[0.44381076097488406,-0.3862294852733612,-0.05557052791118622,0.8067036867141724],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":3,"serializedTransform":{"_position":[-0.024852560833096505,-9.309999993156737e-10,-1.8629999765096274e-9],"_rotation":[0.25168776512145998,-0.15906445682048798,-0.16043642163276673,0.9410695433616638],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":2},{"BoneID":4,"serializedTransform":{"_position":[-0.032512910664081576,5.820000037459749e-10,1.8629999765096274e-9],"_rotation":[-0.08230624347925186,0.05459573119878769,-0.17446193099021913,0.9796979427337647],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":3},{"BoneID":5,"serializedTransform":{"_position":[-0.033793095499277118,3.2600000476890047e-9,1.8629999765096274e-9],"_rotation":[0.0823800265789032,-0.06058427691459656,0.0031919812317937614,0.9947527050971985],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":4},{"BoneID":6,"serializedTransform":{"_position":[-0.09599623829126358,0.007316455245018005,-0.02355067990720272],"_rotation":[0.02692635916173458,0.08222224563360214,-0.12849551439285279,0.9879288077354431],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":7,"serializedTransform":{"_position":[-0.037927303463220599,-5.820000037459749e-10,-5.970000049870805e-10],"_rotation":[-0.025984959676861764,-0.0024880748242139818,-0.3565789759159088,0.9339004755020142],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":6},{"BoneID":8,"serializedTransform":{"_position":[-0.024303648620843889,-6.729999890708882e-10,-6.750000003385992e-10],"_rotation":[-0.01680949702858925,0.02453433908522129,-0.08524119108915329,0.9959164261817932],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":7},{"BoneID":9,"serializedTransform":{"_position":[-0.09564661234617233,0.0025431548710912468,-0.0017259055748581887],"_rotation":[-0.015459122136235237,0.1143173947930336,-0.10578650236129761,0.9876749515533447],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":10,"serializedTransform":{"_position":[-0.04292700067162514,-8.50999992696444e-10,-1.1930000320958812e-9],"_rotation":[-0.012907246127724648,-0.0007870267145335674,-0.4214410185813904,0.9067636728286743],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":9},{"BoneID":11,"serializedTransform":{"_position":[-0.02754957601428032,3.089999922600839e-10,1.128000026717757e-9],"_rotation":[-0.06119847670197487,-0.0076360683888196949,-0.1872919499874115,0.9803663492202759],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":10},{"BoneID":12,"serializedTransform":{"_position":[-0.08869379758834839,0.006529307924211025,0.017465243116021158],"_rotation":[-0.06641343235969544,0.135715514421463,-0.1514354944229126,0.9768509864807129],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":13,"serializedTransform":{"_position":[-0.03899610415101051,0.0,5.240000100492637e-10],"_rotation":[-0.04038010165095329,-0.009404238313436509,-0.36346927285194399,0.9306831359863281],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":12},{"BoneID":14,"serializedTransform":{"_position":[-0.026573391631245614,1.2809999727636523e-9,1.6300000238445023e-9],"_rotation":[-0.015838172286748887,-0.029557587578892709,-0.2413686364889145,0.969853937625885],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":13},{"BoneID":15,"serializedTransform":{"_position":[-0.03407355770468712,0.009419836103916169,0.022998575121164323],"_rotation":[-0.20703598856925965,0.1403428465127945,-0.018311800435185434,0.9680416584014893],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":16,"serializedTransform":{"_position":[-0.04565054923295975,9.976789669963183e-7,-0.000002193962927776738],"_rotation":[0.07346377521753311,0.05402715876698494,-0.20468150079250337,0.9745715856552124],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":15},{"BoneID":17,"serializedTransform":{"_position":[-0.030720416456460954,1.0480000200985274e-9,-1.7500000060177712e-10],"_rotation":[-0.05658799037337303,0.033145807683467868,-0.2131015509366989,0.9748265743255615],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":16},{"BoneID":18,"serializedTransform":{"_position":[-0.020311379805207254,-2.9100000187298749e-10,9.309999993156737e-10],"_rotation":[0.001107553020119667,-0.048780206590890887,-0.11142449080944061,0.9925743937492371],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":17},{"BoneID":19,"serializedTransform":{"_position":[-0.024590766057372094,-0.0010269738268107176,0.0006703701219521463],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":5},{"BoneID":20,"serializedTransform":{"_position":[-0.02236337959766388,-0.0010250703198835254,0.00029560757684521377],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":8},{"BoneID":21,"serializedTransform":{"_position":[-0.024964921176433564,-0.0011372988810762764,0.000308652815874666],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":11},{"BoneID":22,"serializedTransform":{"_position":[-0.024326125159859659,-0.0016081715002655984,0.0002579049614723772],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":14},{"BoneID":23,"serializedTransform":{"_position":[-0.021922379732131959,-0.001216085976921022,-0.0002464796416461468],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":18}]}'
+  _handPoseRight: '{"_serializedBones":[{"BoneID":0,"serializedTransform":{"_position":[0.0,0.0,0.0],"_rotation":[0.0,1.0,0.0,0.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":-1},{"BoneID":1,"serializedTransform":{"_position":[0.0,0.0,0.0],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":2,"serializedTransform":{"_position":[0.0200693029910326,-0.01155409961938858,0.010496520437300206],"_rotation":[0.45475590229034426,-0.3794492185115814,-0.06606489419937134,0.8030260801315308],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":3,"serializedTransform":{"_position":[0.024852558970451356,2.3280000149838999e-9,0.0],"_rotation":[0.24693110585212708,-0.21161337196826936,-0.1733429729938507,0.9296220541000366],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":2},{"BoneID":4,"serializedTransform":{"_position":[0.03251291438937187,-1.1600000127121035e-10,0.0],"_rotation":[-0.08176252245903015,0.050884589552879336,-0.21262678503990174,0.97237628698349],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":3},{"BoneID":5,"serializedTransform":{"_position":[0.033793095499277118,-3.2600000476890047e-9,-1.8629999765096274e-9],"_rotation":[0.08049087226390839,-0.05439992621541023,-0.07011972367763519,0.9927966594696045],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":4},{"BoneID":6,"serializedTransform":{"_position":[0.09599623829126358,-0.007316454779356718,0.02355067990720272],"_rotation":[0.029816633090376855,0.06531738489866257,-0.0817871242761612,0.9940601587295532],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":7,"serializedTransform":{"_position":[0.037927303463220599,1.1600000127121035e-10,5.970000049870805e-10],"_rotation":[-0.02586732991039753,-0.0031558945775032045,-0.37984898686408999,0.9246814250946045],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":6},{"BoneID":8,"serializedTransform":{"_position":[0.024303648620843889,6.729999890708882e-10,6.750000003385992e-10],"_rotation":[-0.016959816217422487,0.023592744022607805,-0.13397136330604554,0.9905591607093811],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":7},{"BoneID":9,"serializedTransform":{"_position":[0.09564661234617233,-0.002543154638260603,0.0017259055748581887],"_rotation":[-0.0075564514845609669,0.1275925636291504,-0.03535652533173561,0.9911675453186035],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":10,"serializedTransform":{"_position":[0.04292700067162514,1.3169999535378452e-9,1.1930000320958812e-9],"_rotation":[-0.012944301590323449,-0.0022675851359963419,-0.5302630066871643,0.8477312922477722],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":9},{"BoneID":11,"serializedTransform":{"_position":[0.02754957601428032,-7.709999860772143e-10,-1.119999981646913e-9],"_rotation":[-0.05602874606847763,-0.005147178657352924,-0.13041499257087708,0.9898617267608643],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":10},{"BoneID":12,"serializedTransform":{"_position":[0.08869379758834839,-0.006529307458549738,-0.017465243116021158],"_rotation":[-0.05461322143673897,0.1522447168827057,-0.062277890741825107,0.9848657250404358],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":13,"serializedTransform":{"_position":[0.03899610415101051,-4.660000163525524e-10,-5.240000100492637e-10],"_rotation":[-0.04131600633263588,-0.012604820542037487,-0.4553012251853943,0.8892889618873596],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":12},{"BoneID":14,"serializedTransform":{"_position":[0.026573391631245614,-1.2809999727636523e-9,-1.6300000238445023e-9],"_rotation":[-0.015297133475542069,-0.02958679385483265,-0.22955085337162019,0.9727266430854797],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":13},{"BoneID":15,"serializedTransform":{"_position":[0.03407355770468712,-0.009419835172593594,-0.022998575121164323],"_rotation":[-0.20703598856925965,0.1403428465127945,-0.018311800435185434,0.9680416584014893],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":0},{"BoneID":16,"serializedTransform":{"_position":[0.04565054923295975,-9.9861097169196e-7,0.000002193962927776738],"_rotation":[0.08910765498876572,0.018926210701465608,-0.05305783823132515,0.9944278001785278],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":15},{"BoneID":17,"serializedTransform":{"_position":[0.030720416456460954,6.979999911393975e-10,1.1059999582840874e-9],"_rotation":[-0.06452593207359314,0.027919020503759385,-0.3161994516849518,0.9460839629173279],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":16},{"BoneID":18,"serializedTransform":{"_position":[0.020311379805207254,-1.4550000093649374e-9,-1.3969999601570749e-9],"_rotation":[0.0007914896123111248,-0.04914551600813866,-0.01850501261651516,0.9986199140548706],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":17},{"BoneID":19,"serializedTransform":{"_position":[0.024590766057372094,0.0010269738268107176,-0.0006703701219521463],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":5},{"BoneID":20,"serializedTransform":{"_position":[0.02236337959766388,0.0010250703198835254,-0.00029560757684521377],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":8},{"BoneID":21,"serializedTransform":{"_position":[0.024964921176433564,0.0011372988810762764,-0.000308652815874666],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":11},{"BoneID":22,"serializedTransform":{"_position":[0.024326125159859659,0.0016081715002655984,-0.0002579049614723772],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":14},{"BoneID":23,"serializedTransform":{"_position":[0.021922379732131959,0.001216085976921022,0.0002464796416461468],"_rotation":[0.0,0.0,0.0,1.0],"_scale":[1.0,1.0,1.0]},"ParentBoneIndex":18}]}'
+  _positionLeft: {x: 0.10859272, y: 0.058049675, z: 0.002174618}
+  _rotationLeft: {x: -0.60957414, y: -0.59981936, z: -0.46665058, w: -0.22555129}
+  _positionRight: {x: -0.1090418, y: -0.053024292, z: -0.0029998987}
+  _rotationRight: {x: 0.57095015, y: 0.17359631, z: -0.4375677, w: -0.6726179}

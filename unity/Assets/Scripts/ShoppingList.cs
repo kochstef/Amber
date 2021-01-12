@@ -176,7 +176,7 @@ public class ShoppingList : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Timer");
+                   // Debug.Log("Timer");
                     textMeshProTime.SetText(timeRemaining.ToString());
                     timeRemaining -= Time.deltaTime;
                 }
