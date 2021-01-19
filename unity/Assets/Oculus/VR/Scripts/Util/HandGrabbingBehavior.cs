@@ -191,7 +191,9 @@ public class HandGrabbingBehavior : MonoBehaviour
         m_grabbedObj.transform.parent = null;
         m_grabbedObj = null;
         _ovrSkeleton.getDataFromItem = false;
-      //  GrabVolumeEnable(true);
+        //TODO: Create a good velocity for throwing 
+        //rb.velocity = GetComponent<Rigidbody>().velocity;
+        //  GrabVolumeEnable(true);
     }
 
     void OnUpdatedAnchors()

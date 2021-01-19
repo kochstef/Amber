@@ -364,7 +364,7 @@ public class OVRGrabber : MonoBehaviour
 			OVRPose trackingSpace = transform.ToOVRPose() * localPose.Inverse();
 			Vector3 linearVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerVelocity(m_controller);
 			Vector3 angularVelocity = trackingSpace.orientation * OVRInput.GetLocalControllerAngularVelocity(m_controller);
-
+            
             GrabbableRelease(linearVelocity, angularVelocity);
         }
 
@@ -373,8 +373,9 @@ public class OVRGrabber : MonoBehaviour
     }
 
     protected void GrabbableRelease(Vector3 linearVelocity, Vector3 angularVelocity)
-    {
+    {    
         m_grabbedObj.GrabEnd(linearVelocity, angularVelocity);
+        
         if(m_parentHeldObject) m_grabbedObj.transform.parent = null;
         m_grabbedObj = null;
     }

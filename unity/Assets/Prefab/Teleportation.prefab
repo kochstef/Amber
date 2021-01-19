@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1485052041299871958}
   - component: {fileID: 1485052041299871953}
   - component: {fileID: 1485052041299871952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TeleportationAnimation
   m_TagString: Teleportation Animation
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3964207235409869176}
   - component: {fileID: 3964207235409869127}
   - component: {fileID: 3964207235409869126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TeleportationPlatform
   m_TagString: Teleportation Platform
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3964207236603277526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TeleportationPoint
   m_TagString: Teleportation Point
   m_Icon: {fileID: 0}

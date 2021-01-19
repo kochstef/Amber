@@ -129,6 +129,7 @@
               <e p="OvrAvatarSkinnedMeshRenderPBSV2Component.cs" t="Include" />
               <e p="OvrAvatarTextureCopyManager.cs" t="Include" />
               <e p="OvrAvatarTouchController.cs" t="Include" />
+              <e p="SetFloorLevel.cs" t="Include" />
             </e>
           </e>
           <e p="LipSync" t="Include">

@@ -32,7 +32,7 @@ public class TeleportationPlayer : MonoBehaviour
         RaycastHit hit;
         Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100) &&
+        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100, 1 << LayerMask.NameToLayer("Teleportation")) &&
             hit.collider.CompareTag("Teleportation Platform"))
         {
             countdown += Time.deltaTime;
@@ -48,7 +48,7 @@ public class TeleportationPlayer : MonoBehaviour
             return teleportPosition;
         }
 
-        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100) &&
+        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100, 1 << LayerMask.NameToLayer("Teleportation")) &&
             hit.collider.CompareTag("Teleportation Platform Cashier"))
         {
             countdown += Time.deltaTime;
@@ -58,9 +58,8 @@ public class TeleportationPlayer : MonoBehaviour
             {
                 return null;
             }
-
+            teleportToCashierDesk = true;    
             stopSimpleAnimation();
-            teleportToCashierDesk = true;
             return teleportPosition;
         }
 
@@ -127,7 +126,7 @@ public class TeleportationPlayer : MonoBehaviour
             GameObject shoppingCardPosition = GameObject.FindGameObjectWithTag("PositionShoppingCart");
             if (shoppingCardPosition != null)
             {
-                shoppingCart.position = shoppingCardPosition.transform.position;
+                shoppingCart.position = new Vector3(shoppingCardPosition.transform.position.x, shoppingCart.position.y, shoppingCardPosition.transform.position.z);
             }
         }
         else
