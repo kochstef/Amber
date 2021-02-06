@@ -10,8 +10,9 @@ public class TeleportationPlayer : MonoBehaviour
     public float timeTillTeleport = 2f;
 
     public Transform cam;
-    public LocomotionController locomotionController;
     public Transform shoppingCart;
+   
+
 
     //  [SerializeField] private float distanceOfRay;
     private float countdown = 0.0f;
@@ -19,11 +20,11 @@ public class TeleportationPlayer : MonoBehaviour
     private GameObject tempObject = null;
     private Transform teleportPosition;
 
+
     private float scaleXOriginal;
     private float scaleZOriginal;
 
 
-   
     //TODO: GET RID OF THAT UGLY BOOLEAN
     private bool teleportToCashierDesk = false;
 
@@ -58,7 +59,8 @@ public class TeleportationPlayer : MonoBehaviour
             {
                 return null;
             }
-            teleportToCashierDesk = true;    
+
+            teleportToCashierDesk = true;
             stopSimpleAnimation();
             return teleportPosition;
         }
@@ -68,7 +70,7 @@ public class TeleportationPlayer : MonoBehaviour
         return null;
     }
 
-   
+
     private void simpleAnimation(RaycastHit hit)
     {
         if (animationObject == null)
@@ -126,7 +128,8 @@ public class TeleportationPlayer : MonoBehaviour
             GameObject shoppingCardPosition = GameObject.FindGameObjectWithTag("PositionShoppingCart");
             if (shoppingCardPosition != null)
             {
-                shoppingCart.position = new Vector3(shoppingCardPosition.transform.position.x, shoppingCart.position.y, shoppingCardPosition.transform.position.z);
+                shoppingCart.position = new Vector3(shoppingCardPosition.transform.position.x, shoppingCart.position.y,
+                    shoppingCardPosition.transform.position.z);
             }
         }
         else
@@ -137,7 +140,6 @@ public class TeleportationPlayer : MonoBehaviour
                 shoppingCart.position = shoppingCardPosition.transform.position;
             }
         }
-        
     }
 
 // Update is called once per frame
