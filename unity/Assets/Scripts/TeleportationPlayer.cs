@@ -12,14 +12,11 @@ public class TeleportationPlayer : MonoBehaviour
     public Transform cam;
     public Transform shoppingCart;
    
-
-
     //  [SerializeField] private float distanceOfRay;
     private float countdown = 0.0f;
     private GameObject animationObject;
     private GameObject tempObject = null;
     private Transform teleportPosition;
-
 
     private float scaleXOriginal;
     private float scaleZOriginal;
@@ -46,6 +43,7 @@ public class TeleportationPlayer : MonoBehaviour
 
             stopSimpleAnimation();
             teleportToCashierDesk = false;
+            countdown = 0.0f;
             return teleportPosition;
         }
 
@@ -62,6 +60,7 @@ public class TeleportationPlayer : MonoBehaviour
 
             teleportToCashierDesk = true;
             stopSimpleAnimation();
+            countdown = 0.0f;
             return teleportPosition;
         }
 
@@ -137,7 +136,8 @@ public class TeleportationPlayer : MonoBehaviour
             GameObject shoppingCardPosition = GameObject.FindGameObjectWithTag("Shopping Cart Position Cashier");
             if (shoppingCardPosition != null)
             {
-                shoppingCart.position = shoppingCardPosition.transform.position;
+                shoppingCart.position = new Vector3(shoppingCardPosition.transform.position.x, shoppingCart.position.y,
+                    shoppingCardPosition.transform.position.z);
             }
         }
     }
