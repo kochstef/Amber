@@ -16,19 +16,36 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public static GameManager instance = null;
+    public static GameManager Instance = null;
 
     public GameObject shoppingCart;
     public TextMeshPro exitText;
     private int counterLokedAtList = 0;
     public bool trackTime = false;
     private float time = 0f;
+    
+   public enum GameStates
+    {
+        ExplanationState,
+        RememberItemsState,
+        RoundHasStartedState,
+        RoundHasEnded
+    }
 
+    private GameStates _gameState = GameStates.ExplanationState;
+
+    public GameStates GameState
+    {
+        get => _gameState;
+        set => _gameState = value;
+    }
+
+
+    public bool TeleportEnabled { get; set; }
 
     protected GameManager()
     {
     }
-
 
 
     // public event OnStateChangeHandler OnStateChange;
@@ -36,10 +53,9 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         else
         {
@@ -47,7 +63,7 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-
+        TeleportEnabled = false;
         ParametersForGame.InitParametersForGame(6);
     }
 
@@ -55,29 +71,31 @@ public class GameManager : MonoBehaviour
     {
         //startGame();
     }
-    
+
     public void SetTextList()
     {
         ShoppingList.instance.SetText(ParametersForGame.Instance().GetItemsToCollect());
     }
 
 
-
     public void endRound()
     {
+       
         ShoppingCart shoppingCartScript = shoppingCart.GetComponent<ShoppingCart>();
         List<string> itemsInShoppingCart = shoppingCartScript.GetTagsChildren();
 
-        
-        Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect(), time, counterLokedAtList);
-        
-        
+
+        Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect(),
+            time, counterLokedAtList);
+
+
         Debug.Log("Round has ended");
-        
+
         exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
                          + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
-      //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
+        //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
         //calculate points
+        GameState = GameStates.RoundHasEnded;
     }
 
     public void IncrementCounterLookedAtList()
@@ -87,7 +105,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(trackTime)
+        if (trackTime)
         {
             time += Time.deltaTime;
         }

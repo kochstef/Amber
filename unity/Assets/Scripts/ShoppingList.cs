@@ -12,26 +12,27 @@ public class ShoppingList : MonoBehaviour
 
     // For showing the list------------------------------
     public GameObject listObject;
-    private bool isCounting;
     public float timeToShowShoppingList = 3f;
     private float countdown;
+    private float countdownLookInterrupt;
+    public float timeToInterruptLookAtList = 0.1f;
     public GameObject button;
     float timeRemaining = 5f;
-    
+
     //For filling the List-------------------------------
     public TextMeshPro textmeshPro;
 
     public TextMeshPro textMeshProTime;
+
     //private List<string> allItems;
     //this later should go over the server depending on the level of the patient
     //private int amountOfItems = 6;
     //private Dictionary<string, int> itemsToCollect;
     //the shoppingcart to check if all items have been collected
     private GameObject shoppingCart;
-    private bool roundHasStarted;
     private bool showAtStart = true;
-    
-    
+
+
     //for the loading animation 
     public GameObject animationObject;
     private float scale_y_original;
@@ -50,11 +51,10 @@ public class ShoppingList : MonoBehaviour
 
         listObject.SetActive(true);
         button.SetActive(true);
-        isCounting = false;
         countdown = 0.0f;
         Debug.Log(gameObject.name);
-        roundHasStarted = false;
-        
+        GameManager.Instance.GameState = GameManager.GameStates.ExplanationState;
+        GameManager.Instance.TeleportEnabled = false;
         animationObject.SetActive(false);
 
         scale_y_original = animationObject.transform.localScale.y;
@@ -95,55 +95,59 @@ public class ShoppingList : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.left);
         // Debug.DrawLine(transform.position, fwd, Color.green);
         RaycastHit hit;
-        Debug.DrawRay(transform.position,-transform.forward, Color.green);
+        Debug.DrawRay(transform.position, -transform.forward, Color.green);
         if (Physics.Raycast(transform.position, -transform.forward, out hit, 10) && hit.collider.CompareTag("Head"))
         {
-            isCounting = true;
-        }
-        else
-        {
-            isCounting = false;
-            countdown = 0.0f;
-            listObject.SetActive(false);
-        }
+            GameManager.Instance.TeleportEnabled = false;
 
-        if (countdown >= timeToShowShoppingList)
-        {
-            if(!listObject.activeSelf)
-            {
-                GameManager.instance.IncrementCounterLookedAtList();
-            }
-            animationObject.SetActive(false);
-            listObject.SetActive(true);
-            //deactivate loading list
-        }
 
-        if (isCounting)
-        {
             countdown += Time.deltaTime;
-            if(!listObject.activeSelf)
+            countdownLookInterrupt = timeToInterruptLookAtList;
+            if (!listObject.activeSelf)
             {
                 float size = ((100 / timeToShowShoppingList) * countdown) / 100;
                 animationObject.SetActive(true);
-                animationObject.transform.localScale = new Vector3(animationObject.transform.localScale.x, scale_y_original * size, scale_z_original* size);
+                animationObject.transform.localScale = new Vector3(animationObject.transform.localScale.x,
+                    scale_y_original * size, scale_z_original * size);
+            }
+
+            if (countdown >= timeToShowShoppingList)
+            {
+                if (!listObject.activeSelf)
+                {
+                    GameManager.Instance.IncrementCounterLookedAtList();
+                }
+
+                animationObject.SetActive(false);
+                listObject.SetActive(true);
+                //deactivate loading list
             }
         }
-        else
+        else if (countdown > 0.0f)
         {
-            animationObject.SetActive(false);
+            if (countdownLookInterrupt < 0.0f)
+            {
+                GameManager.Instance.TeleportEnabled = true;
+                animationObject.SetActive(false);
+                countdown = 0.0f;
+                listObject.SetActive(false);
+            }
+
+            countdownLookInterrupt -= Time.deltaTime;
         }
     }
 
     public void startRoundHandler()
     {
         Debug.Log("button pushed");
-        GameManager.instance.SetTextList();
+        GameManager.Instance.SetTextList();
         // show timer on list
         // 
         // 
-        roundHasStarted = true;
+        GameManager.Instance.GameState = GameManager.GameStates.RememberItemsState;
+        GameManager.Instance.TeleportEnabled = false;
         button.SetActive(false);
-        
+
         //listObject.SetActive(false);
     }
 
@@ -161,44 +165,40 @@ public class ShoppingList : MonoBehaviour
   */
     void Update()
     {
-        
-        if(roundHasStarted)
+        if (GameManager.Instance.GameState == GameManager.GameStates.RoundHasStartedState)
         {
-            if(showAtStart)
+            ShowList();
+        }
+        else if (GameManager.Instance.GameState == GameManager.GameStates.RememberItemsState)
+        {
+            if (timeRemaining < 0f)
             {
-                if ( timeRemaining < 0f)
-                {
-                    showAtStart = false;
-                
-                    listObject.SetActive(false);
-                    GameManager.instance.trackTime = true;
-                    textMeshProTime.SetText("");
-                }
-                else
-                {
-                   // Debug.Log("Timer");
-                    textMeshProTime.SetText(timeRemaining.ToString());
-                    timeRemaining -= Time.deltaTime;
-                }
+                GameManager.Instance.TeleportEnabled = true;
+                GameManager.Instance.GameState = GameManager.GameStates.RoundHasStartedState;
+                showAtStart = false;
+                listObject.SetActive(false);
+                GameManager.Instance.trackTime = true;
+                textMeshProTime.SetText("");
             }
             else
             {
-                ShowList();
+                // Debug.Log("Timer");
+                textMeshProTime.SetText(timeRemaining.ToString());
+                timeRemaining -= Time.deltaTime;
             }
         }
     }
-    
-   /* IEnumerator WaitCoroutine()
-    {
-        //Print the time of when the function is first called.
-        Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(5);
-
-        //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
-    }
-    */
-    
+    /* IEnumerator WaitCoroutine()
+     {
+         //Print the time of when the function is first called.
+         Debug.Log("Started Coroutine at timestamp : " + Time.time);
+ 
+         //yield on a new YieldInstruction that waits for 5 seconds.
+         yield return new WaitForSeconds(5);
+ 
+         //After we have waited 5 seconds print the time again.
+         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+     }
+     */
 }

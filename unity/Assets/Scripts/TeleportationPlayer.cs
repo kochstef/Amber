@@ -11,7 +11,7 @@ public class TeleportationPlayer : MonoBehaviour
 
     public Transform cam;
     public Transform shoppingCart;
-   
+
     //  [SerializeField] private float distanceOfRay;
     private float countdown = 0.0f;
     private GameObject animationObject;
@@ -25,12 +25,14 @@ public class TeleportationPlayer : MonoBehaviour
     //TODO: GET RID OF THAT UGLY BOOLEAN
     private bool teleportToCashierDesk = false;
 
-    public Transform CheckTeleport()
+    
+
+    private Transform CheckTeleport()
     {
-        RaycastHit hit;
         Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
 
-        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100, 1 << LayerMask.NameToLayer("Teleportation")) &&
+        if (Physics.Raycast(cam.transform.position, fwd, out var hit, 100,
+                1 << LayerMask.NameToLayer("Teleportation")) &&
             hit.collider.CompareTag("Teleportation Platform"))
         {
             countdown += Time.deltaTime;
@@ -146,12 +148,15 @@ public class TeleportationPlayer : MonoBehaviour
     void Update()
     {
         //TODO: change this to one call only 
-        Transform teleport_point = CheckTeleport();
-        if (teleport_point != null)
+        if (GameManager.Instance.TeleportEnabled)
         {
-            teleportPlayer(teleport_point);
-            teleportShopingCart();
-            Debug.Log("Teleport");
+            Transform teleport_point = CheckTeleport();
+            if (teleport_point != null)
+            {
+                teleportPlayer(teleport_point);
+                teleportShopingCart();
+                Debug.Log("Teleport");
+            }
         }
 
 /*  teleport_point = CheckTeleportCashierDesk();

@@ -193,6 +193,7 @@ public class HandGrabbingBehavior : MonoBehaviour
         _ovrSkeleton.getDataFromItem = false;
         //TODO: Create a good velocity for throwing 
         //rb.velocity = GetComponent<Rigidbody>().velocity;
+   
         //  GrabVolumeEnable(true);
     }
 
