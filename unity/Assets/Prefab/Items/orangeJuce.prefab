@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 542905349294387700}
   - component: {fileID: 3827641805181010284}
   m_Layer: 0
-  m_Name: orangeJuce (1)
-  m_TagString: Milk
+  m_Name: orangeJuce
+  m_TagString: OrangeJuice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

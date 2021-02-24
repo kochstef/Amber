@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1475857221247514205
+--- !u!1 &8349293503926565106
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2247468830288211175}
-  - component: {fileID: 2927136808222876482}
-  - component: {fileID: 1115678996890687368}
+  - component: {fileID: 8688981451451179592}
+  - component: {fileID: 5709065750329404909}
+  - component: {fileID: 7556576475658017063}
+  - component: {fileID: 946727873828089663}
+  - component: {fileID: 5116476279399054973}
+  - component: {fileID: 8757362041405944396}
+  - component: {fileID: 4840253881772976882}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -18,35 +22,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2247468830288211175
+--- !u!4 &8688981451451179592
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475857221247514205}
+  m_GameObject: {fileID: 8349293503926565106}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.4898405, y: -1.0250003, z: 2.70271}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &2927136808222876482
+--- !u!33 &5709065750329404909
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475857221247514205}
+  m_GameObject: {fileID: 8349293503926565106}
   m_Mesh: {fileID: -309714252234372146, guid: 30860ef96e63b734c9ef75ca8eadb1aa, type: 3}
---- !u!23 &1115678996890687368
+--- !u!23 &7556576475658017063
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475857221247514205}
+  m_GameObject: {fileID: 8349293503926565106}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -81,3 +85,72 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &946727873828089663
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &5116476279399054973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0004, y: 0.0014000003, z: 0.0021000004}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8757362041405944396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8572239b25e8e44a9e0a79f4454356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_grabbedObj: {fileID: 0}
+  m_hand: {fileID: 0}
+  _ovrSkeleton: {fileID: 0}
+--- !u!114 &4840253881772976882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189ed75d2c2c6d24c960b392270a937f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_allowOffhandGrab: 1
+  m_snapPosition: 1
+  m_snapOrientation: 0
+  m_snapOffset: {fileID: 0}
+  m_grabPoints: []
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
+  _handPoseLeft: 
+  _handPoseRight: 
+  _positionLeft: {x: 0, y: 0, z: 0}
+  _rotationLeft: {x: 0, y: 0, z: 0, w: 0}
+  _positionRight: {x: 0, y: 0, z: 0}
+  _rotationRight: {x: 0, y: 0, z: 0, w: 0}
