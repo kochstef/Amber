@@ -30,7 +30,7 @@ public class ShoppingList : MonoBehaviour
     //private Dictionary<string, int> itemsToCollect;
     //the shoppingcart to check if all items have been collected
     private GameObject shoppingCart;
-    private bool showAtStart = true;
+    
 
 
     //for the loading animation 
@@ -175,9 +175,7 @@ public class ShoppingList : MonoBehaviour
             {
                 GameManager.Instance.TeleportEnabled = true;
                 GameManager.Instance.GameState = GameManager.GameStates.RoundHasStartedState;
-                showAtStart = false;
                 listObject.SetActive(false);
-                GameManager.Instance.trackTime = true;
                 textMeshProTime.SetText("");
             }
             else

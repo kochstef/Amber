@@ -10,7 +10,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         //TODO: TO this right
-        XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale);
+     //   XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale);
         
         
         

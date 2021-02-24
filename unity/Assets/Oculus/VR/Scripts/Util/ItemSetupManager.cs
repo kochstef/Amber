@@ -8,7 +8,7 @@ using UnityEngine;
 public class ItemSetupManager : MonoBehaviour
 {
     //TODO: Undo comment crashes unrelated build dont know why
-    /*
+    
     public HandItemSetup itemSetupLeft;
     public HandItemSetup itemSetupRight;
     
@@ -187,5 +187,5 @@ public class ItemSetupManager : MonoBehaviour
 
         if (bonesCopy.Count == 0) Debug.Log("Copying the hand pose did not work.");
         return bonesCopy;
-    }*/
+    }
 }

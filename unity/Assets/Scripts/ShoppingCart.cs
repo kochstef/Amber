@@ -5,13 +5,11 @@ using UnityEngine;
 
 public class ShoppingCart : MonoBehaviour
 {
-    
     public Transform player;
-     
-    public float distanceTillTeleport = 1f;
-    
 
-    
+    public float distanceTillTeleport = 1f;
+
+
     /*private GameObject findClosestShelf()
     {
         GameObject[] gos;
@@ -49,7 +47,7 @@ public class ShoppingCart : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if(ParametersForGame.Instance().allItems.Contains(other.transform.tag))
+        if (ParametersForGame.Instance().allItems.Contains(other.transform.tag))
         {
             other.transform.parent = transform;
         }
@@ -61,8 +59,12 @@ public class ShoppingCart : MonoBehaviour
 
         foreach (Transform child in transform)
         {
-            tagsChildren.Add(child.tag);
+            if (!child.CompareTag("ShoppingCart"))
+            {
+                tagsChildren.Add(child.tag);
+            }
         }
+
         return tagsChildren;
     }
 }

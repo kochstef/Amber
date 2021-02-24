@@ -118,7 +118,7 @@ public class OVRSkeleton : MonoBehaviour
 
     // ==============================================
     public bool getDataFromItem = false;
-    private HandGrabbingBehavior _handGrabbingBehavior;
+    public HandGrabbingBehavior _handGrabbingBehavior;
     
     
 #if UNITY_EDITOR
@@ -154,6 +154,7 @@ public class OVRSkeleton : MonoBehaviour
 
     private void Initialize()
     {
+ 
         var skeleton = new OVRPlugin.Skeleton();
         if (OVRPlugin.GetSkeleton((OVRPlugin.SkeletonType) _skeletonType, out skeleton))
         {
@@ -164,7 +165,7 @@ public class OVRSkeleton : MonoBehaviour
             IsInitialized = true;
         }
 
-        _handGrabbingBehavior = GetComponent<HandGrabbingBehavior>();
+        
     }
 
     virtual protected void InitializeBones(OVRPlugin.Skeleton skeleton)
@@ -373,10 +374,10 @@ public class OVRSkeleton : MonoBehaviour
                     if (_bones[i].Transform != null)
                     {
                         _bones[i].Transform.localRotation = _handGrabbingBehavior._bones[i].Transform.localRotation;
-                        if (_bones[i].Id == BoneId.Hand_WristRoot)
+                       /* if (_bones[i].Id == BoneId.Hand_WristRoot)
                         {
-                           // _bones[i].Transform.localRotation *= wristFixupRotation;
-                        }
+                          //  _bones[i].Transform.localRotation *= wristFixupRotation;
+                        }*/
                     }
                 }
             }

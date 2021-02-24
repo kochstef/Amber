@@ -26,7 +26,9 @@ public class ParametersForGame
         "Orange",
         "Apple",
         "CocaCola",
-        "Milk"
+        "Milk",
+        "OrangeJuice",
+        "Cheese",
     };
     private Dictionary<string, int> itemsToCollect = null;
 

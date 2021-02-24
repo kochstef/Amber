@@ -18,6 +18,9 @@ TagManager:
   - Orange
   - Milk
   - CocaCola
+  - ShoppingCart
+  - Cheese
+  - OrangeJuice
   layers:
   - Default
   - TransparentFX

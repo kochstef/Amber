@@ -87,8 +87,11 @@ public class GameManager : MonoBehaviour
 
         Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect(),
             time, counterLokedAtList);
-
-
+        foreach (var item in itemsInShoppingCart)
+        {
+            Debug.Log(item);
+        }
+       
         Debug.Log("Round has ended");
 
         exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
@@ -105,7 +108,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (trackTime)
+        if (GameState == GameStates.RoundHasStartedState)
         {
             time += Time.deltaTime;
         }

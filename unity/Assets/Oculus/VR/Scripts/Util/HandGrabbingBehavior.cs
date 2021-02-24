@@ -10,9 +10,9 @@ public class HandGrabbingBehavior : MonoBehaviour
    
     
     public OVRGrabbable m_grabbedObj = null;
-    public List<OVRBone> _bones;
+    public List<OVRBone> _bones = null;
     
-    private OVRHand m_hand;
+    public OVRHand m_hand;
     private float pinchThreshhold = 0.2f;
     private OVRSkeleton _ovrSkeleton;
     private Dictionary<OVRGrabbable, int> m_grabCandidates = new Dictionary<OVRGrabbable, int>();
@@ -37,8 +37,8 @@ public class HandGrabbingBehavior : MonoBehaviour
     protected void Start()
     {
         //base.Start();
-        m_hand = GetComponent<OVRHand>();
-        _ovrSkeleton = GetComponent<OVRSkeleton>();
+        _ovrSkeleton = m_hand.GetComponent<OVRSkeleton>();
+        if(_ovrSkeleton == null){Debug.Log("AAAAAAAAAAAAAAAAAAAAAA");}
     }
 
     // Update is called once per frame
@@ -118,7 +118,7 @@ public class HandGrabbingBehavior : MonoBehaviour
 
     void moveItemToHand()
     {
-        switch (GetComponent<OVRHand>().HandType)
+        switch (m_hand.HandType)
         {
             case OVRHand.Hand.HandLeft:
                 m_grabbedObj.transform.localRotation = m_grabbedObj.GetComponent<GrabbableItem>()._rotationLeft;
@@ -158,12 +158,13 @@ public class HandGrabbingBehavior : MonoBehaviour
         m_grabbedObj = closestGrabbable; 
         m_grabbedObj.GrabBegin(this, closestGrabbableCollider);
         
-        m_grabbedObj.transform.parent = transform; 
+        m_grabbedObj.transform.parent = m_hand.transform; 
         //Move to right position and rotation
         moveItemToHand(); 
         //set the gesture for holding the item
-        switch (GetComponent<OVRHand>().HandType)
+        switch (m_hand.HandType)
         {
+            
             case OVRHand.Hand.HandLeft:
                 _bones = m_grabbedObj.GetComponent<GrabbableItem>()._bonesLeft;
                 break;

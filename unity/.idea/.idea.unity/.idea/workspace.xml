@@ -40,25 +40,133 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../blender/Interior/Coke_shelf/coke_shelf.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../blender/Interior/Coke_shelf/coke_shelf.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blender/Interior/Coke_shelf/coke_shelf.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../blender/Interior/Coke_shelf/coke_shelf.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blender/ShoppingCart.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../blender/ShoppingCart.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blender/ShoppingCart.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../blender/ShoppingCart.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/FbxFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/FbxFiles/cashierDesk_fbx.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/FbxFiles/cashierDesk_fbx.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/Interior.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/Interior/CashierDesk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CashierDesk/Interior/CashierDesk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CokeShelf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CokeShelf/_oke_shelf.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/CokeShelf/_oke_shelf.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decoration.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decoration/Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decoration/Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decoration/LightWithLighting.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decoration/LightWithLighting.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/FbxFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/FbxFiles/milk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/FbxFiles/milk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/FbxFiles/milk_shelf.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/FbxFiles/milk_shelf.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/Interior.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/Interior/Milkshelf.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/Interior/Milkshelf.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/ShoppingItems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/ShoppingItems/milk Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/MilkShelf/ShoppingItems/milk Variant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/FbxFiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/FbxFiles/carrot.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/FbxFiles/carrot.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/FbxFiles/onion.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/FbxFiles/onion.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/Interior.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/Interior/OnionCarrotShelf.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/Interior/OnionCarrotShelf.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/Carrot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/Carrot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/CarrotBox.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/CarrotBox.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/Onion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/Onion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/OnionBox.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/OnionCarrotShelf/ShoppingItems/OnionBox.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Apple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Apple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Carrot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Carrot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/CokeBottle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/CokeBottle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Milk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Milk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Onion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Onion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Orange.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/Orange.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/OrangeJuce.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/OrangeJuce.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/coke_bottle (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SetUpItems/coke_bottle (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/coke_bottle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/coke_bottle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Apple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Apple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/cheese.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/cheese.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/orangeJuce.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/orangeJuce.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/Apple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/Apple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/carrot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/carrot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/milk.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/milk.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/onion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SetupItems/onion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShoppingList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShoppingList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/940389dff7e7a1cf17146d713885c2ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb5136dd197315b6619b3aa0ce734465" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/04d58a0e6275c907dad7db13d632b057" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0cd5e52c9926d0ef26b7418440558ab5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0d/0d69b835abb62c71e85d2494816fe22e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/15/15602c13f745abb81f17d07753942ece" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/17/17710f6c4313f48d81750bc93aa3bf02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/182df03785fed4e99bcb8c094c275c15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1c810e40ca54aa2a9285fce657966f78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2a/2a16f07909a03f9d70f5fd5d7c51e021" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/38/388a692b10ba10ad816ca394777325c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/4103032ca58cf2654229ff2f89e43bd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/506bfd515b99b7d21a3c04eefd7de1fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5b/5b585a3ea0876ab6b47affa5bde9d9d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/61/61067306e76e1028146d93c1f53f4ddc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/75/75936378aa610229739b0e682fa49322" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/83fe2441730a37ac7e7d9cefb2e951b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8a/8aafca87c74bc91ba4b746a302990577" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/9575c6f75000ba00f072a7706b117555" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b1/b1d47ff524dd9928dacbd28b7de6f37e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b2/b2ed830b9bfdd70f42e6af5848737a2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b6/b6f569f1e2956b629df17034347c8eb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2552df67f261473639bf481c5388b2b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cd/cd5762c96117af6a2e7442ffae885376" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e1/e1115ac70b1a9db6a0dbc804deb46881" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f9062f3525ef78790a7b84390b0af3bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe1389bd891e62374c938304a995ad25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fef9c7f0b28fd02b945cc6582f99a06a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,21 +195,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HandGrabbingBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemGrabbable.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/SerilizeHandPose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/Serializer.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemGrabbable.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingList.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" />
       </list>
     </option>
   </component>
@@ -177,6 +286,7 @@
       <workItem from="1611013940412" duration="6096000" />
       <workItem from="1612572909546" duration="2694000" />
       <workItem from="1612751269442" duration="807000" />
+      <workItem from="1614113667703" duration="8576000" />
     </task>
     <servers />
   </component>
@@ -307,7 +417,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs</url>
-          <line>391</line>
+          <line>392</line>
           <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\OVRSkeleton.cs" initialLine="391">
             <startOffsets>
               <option value="15243" />
@@ -323,10 +433,10 @@
           <line>102</line>
           <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\HandGrabbingBehavior.cs" initialLine="102">
             <startOffsets>
-              <option value="3188" />
+              <option value="3230" />
             </startOffsets>
             <endOffsets>
-              <option value="3241" />
+              <option value="3283" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
