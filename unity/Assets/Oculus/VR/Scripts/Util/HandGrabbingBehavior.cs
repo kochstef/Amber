@@ -14,7 +14,7 @@ public class HandGrabbingBehavior : MonoBehaviour
     
     public OVRHand m_hand;
     private float pinchThreshhold = 0.2f;
-    private OVRSkeleton _ovrSkeleton;
+    public OVRSkeleton _ovrSkeleton;
     private Dictionary<OVRGrabbable, int> m_grabCandidates = new Dictionary<OVRGrabbable, int>();
     //private GameObject grabbedObject;
 

@@ -40,65 +40,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../textures/Salt/salt_Material_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal.001_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Metal_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/CocaColaCan/coke_bottle_1.1_Red.001_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_MetallicSmoothness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_Cheese_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_BaseMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_BaseMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_MetallicSmoothness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/cheese/cheese_cheeseShale_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/cheese.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/cheese.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/coke_bottle (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/coke_bottle (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Rice.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Rice.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Salt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Salt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/047f9f2a46a393fe2b26200cb24d9212" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0fd08b73f0b9d5ee2db08de2cc4c2a2e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2e/2e3d3ea4b6a423e00b9b9a07c5329766" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/30/301ae8d70d5269de42b6948d31e1bc9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/39/39fe9b41991436858fbe6d3e33f8ca14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e6094bbc712fcc3b833d47290e1edfa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7fb6e17fd633161da20d0445c06916e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8efee301d3d90040e2e3a5f1ebbcdbe3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/ca6f6939231cca1c6bd7b8a94846e436" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cbc82d392be70d86b11316277210816b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/db/db7ceefa095277808cfe60c0652a58d6.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/db/db7ceefa095277808cfe60c0652a58d6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,17 +102,17 @@
         <option value="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/DistanceGrab/Scripts/DistanceGrabber.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingList.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
       </list>
     </option>
   </component>
@@ -220,6 +190,8 @@
       <workItem from="1612751269442" duration="807000" />
       <workItem from="1614113667703" duration="8576000" />
       <workItem from="1614213612966" duration="17000" />
+      <workItem from="1614214045472" duration="1000" />
+      <workItem from="1614214285403" duration="2037000" />
     </task>
     <servers />
   </component>
@@ -366,10 +338,10 @@
           <line>102</line>
           <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Oculus\VR\Scripts\Util\HandGrabbingBehavior.cs" initialLine="102">
             <startOffsets>
-              <option value="3230" />
+              <option value="3229" />
             </startOffsets>
             <endOffsets>
-              <option value="3283" />
+              <option value="3282" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

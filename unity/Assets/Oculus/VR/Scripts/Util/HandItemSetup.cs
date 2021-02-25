@@ -7,10 +7,8 @@ using UnityEditor;
 
 public class HandItemSetup : HandGrabbingBehavior
 {
-    private OVRHand m_hand;
     private float pinchThreshhold = 0.5f;
-
-    public OVRSkeleton _ovrSkeleton;
+    
 
 
 
@@ -29,9 +27,9 @@ public class HandItemSetup : HandGrabbingBehavior
     // Start is called before the first frame update
     void Start()
     {
-        base.Start();
-        m_hand = GetComponent<OVRHand>();
-        _ovrSkeleton = GetComponent<OVRSkeleton>();
+      //  base.Start();
+       // m_hand = GetComponent<OVRHand>();
+       // _ovrSkeleton = GetComponent<OVRSkeleton>();
         //_itemsToSetUp = Resources.LoadAll("pls").Cast<GameObject>().ToArray();
         //_itemsToSetUp = Resources.LoadAll<GameObject>("pls");
     }
