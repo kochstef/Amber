@@ -21,6 +21,8 @@ TagManager:
   - ShoppingCart
   - Cheese
   - OrangeJuice
+  - Salt
+  - Rice
   layers:
   - Default
   - TransparentFX
