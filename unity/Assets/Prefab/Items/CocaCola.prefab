@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4889771441707662412}
   m_Layer: 0
   m_Name: CocaCola
-  m_TagString: Untagged
+  m_TagString: CocaCola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
