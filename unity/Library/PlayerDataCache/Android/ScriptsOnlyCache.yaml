@@ -23,6 +23,7 @@ ScriptsOnlyBuild:
     Oculus.VR.dll:
     - GrabbableItem
     - HandGrabbingBehavior
+    - HandItemSetup
     - OVRCameraRig
     - OVRControllerHelper
     - OVRHand
@@ -190,6 +191,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12926}
     - Class: 114
+      Script: {instanceID: 13196}
+    - Class: 114
       Script: {instanceID: 13480}
     - Class: 114
       Script: {instanceID: 13492}
@@ -310,6 +313,8 @@ ScriptsOnlyBuild:
     - Class: 136
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 145
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -496,7 +501,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerBitField
   - hash:
       serializedVersion: 2
-      Hash: 988d2fdd9f729f48746023aadeb9dd9d
+      Hash: dd23332778266824aba7eb613480553c
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: HandGrabbingBehavior
@@ -748,7 +753,7 @@ ScriptsOnlyBuild:
     className: BoardPosition
   - hash:
       serializedVersion: 2
-      Hash: 8e6720977af5e751cccc1327462bd506
+      Hash: 5836a7eeb1febbc5175a0efeeea2ef1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShoppingList
@@ -838,7 +843,7 @@ ScriptsOnlyBuild:
     className: TrainCar
   - hash:
       serializedVersion: 2
-      Hash: 6d43ae7ca7659484aec12f71402801b4
+      Hash: dd23332778266824aba7eb613480553c
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: HandItemSetup
@@ -1090,7 +1095,7 @@ ScriptsOnlyBuild:
     className: OVRLipSyncMicInput
   - hash:
       serializedVersion: 2
-      Hash: 59cb6d7d7ee2f1e5dd0d0ddc59f5d7d5
+      Hash: 86b0967ce63fb4ad35d02ea9250d4883
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRCustomSkeleton
@@ -2074,7 +2079,7 @@ ScriptsOnlyBuild:
     className: OVRConfig
   - hash:
       serializedVersion: 2
-      Hash: 447e9b3bb2638ceb5dd34af20bedda72
+      Hash: 4fb0440d59cf8496ee245fab3278a971
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TeleportationPlayer
@@ -2416,7 +2421,7 @@ ScriptsOnlyBuild:
     className: TeleportDestination
   - hash:
       serializedVersion: 2
-      Hash: 81d501f999f257b0c026d99ac38729c1
+      Hash: d2368c4d2c5fa29e1df560fbb859d5c0
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRSkeleton

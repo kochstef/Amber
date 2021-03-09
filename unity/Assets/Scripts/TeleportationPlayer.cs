@@ -14,9 +14,11 @@ public class TeleportationPlayer : MonoBehaviour
 
     //  [SerializeField] private float distanceOfRay;
     private float countdown = 0.0f;
+    private float countdownLookInterrupt;
     private GameObject animationObject;
     private GameObject tempObject = null;
     private Transform teleportPosition;
+    public float timeToInterruptLookAtList = 0.1f;
 
     private float scaleXOriginal;
     private float scaleZOriginal;
@@ -25,7 +27,6 @@ public class TeleportationPlayer : MonoBehaviour
     //TODO: GET RID OF THAT UGLY BOOLEAN
     private bool teleportToCashierDesk = false;
 
-    
 
     private Transform CheckTeleport()
     {
@@ -35,6 +36,7 @@ public class TeleportationPlayer : MonoBehaviour
                 1 << LayerMask.NameToLayer("Teleportation")) &&
             hit.collider.CompareTag("Teleportation Platform"))
         {
+            countdownLookInterrupt = timeToInterruptLookAtList;
             countdown += Time.deltaTime;
             simpleAnimation(hit);
 
@@ -49,9 +51,11 @@ public class TeleportationPlayer : MonoBehaviour
             return teleportPosition;
         }
 
-        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100, 1 << LayerMask.NameToLayer("Teleportation")) &&
+        if (Physics.Raycast(cam.transform.position, fwd, out hit, 100,
+                1 << LayerMask.NameToLayer("Teleportation")) &&
             hit.collider.CompareTag("Teleportation Platform Cashier"))
         {
+            countdownLookInterrupt = timeToInterruptLookAtList;
             countdown += Time.deltaTime;
             simpleAnimation(hit);
 
@@ -66,8 +70,14 @@ public class TeleportationPlayer : MonoBehaviour
             return teleportPosition;
         }
 
-        stopSimpleAnimation();
-        countdown = 0.0f;
+        if (countdownLookInterrupt < 0.0f)
+        {
+            stopSimpleAnimation();
+            countdown = 0.0f;
+        }
+
+        countdownLookInterrupt -= Time.deltaTime;
+
         return null;
     }
 

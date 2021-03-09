@@ -39,37 +39,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Rice.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Rice.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Salt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ItemsToSetup/Salt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ItemSetup.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/04/047f9f2a46a393fe2b26200cb24d9212" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0fd08b73f0b9d5ee2db08de2cc4c2a2e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2e/2e3d3ea4b6a423e00b9b9a07c5329766" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/30/301ae8d70d5269de42b6948d31e1bc9d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/39/39fe9b41991436858fbe6d3e33f8ca14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e6094bbc712fcc3b833d47290e1edfa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7fb6e17fd633161da20d0445c06916e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8efee301d3d90040e2e3a5f1ebbcdbe3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/ca6f6939231cca1c6bd7b8a94846e436" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cbc82d392be70d86b11316277210816b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Oculus.VR.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/db/db7ceefa095277808cfe60c0652a58d6.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/PrefabStageHierarchy/db/db7ceefa095277808cfe60c0652a58d6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-    </list>
+    <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +73,6 @@
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
@@ -111,8 +80,9 @@
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandItemSetup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/HandGrabbingBehavior.cs" />
+        <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/ItemSetupManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportationPlayer.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +162,8 @@
       <workItem from="1614213612966" duration="17000" />
       <workItem from="1614214045472" duration="1000" />
       <workItem from="1614214285403" duration="2037000" />
+      <workItem from="1614218013989" duration="1508000" />
+      <workItem from="1614622197266" duration="1204000" />
     </task>
     <servers />
   </component>

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5709065750329404909}
   - component: {fileID: 7556576475658017063}
   - component: {fileID: 946727873828089663}
-  - component: {fileID: 5116476279399054973}
   - component: {fileID: 8757362041405944396}
   - component: {fileID: 4840253881772976882}
+  - component: {fileID: 6211382678617508965}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -29,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8349293503926565106}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5709065750329404909
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101,19 +101,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &5116476279399054973
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8349293503926565106}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0004, y: 0.0014000003, z: 0.0021000004}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8757362041405944396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +133,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 5116476279399054973}
+  - {fileID: 6211382678617508965}
   m_grabbedCollider: {fileID: 0}
   m_grabbedBy: {fileID: 0}
   _handPoseLeft: 
@@ -155,3 +142,16 @@ MonoBehaviour:
   _rotationLeft: {x: 0, y: 0, z: 0, w: 0}
   _positionRight: {x: 0, y: 0, z: 0}
   _rotationRight: {x: 0, y: 0, z: 0, w: 0}
+--- !u!65 &6211382678617508965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.21, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
