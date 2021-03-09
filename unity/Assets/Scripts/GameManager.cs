@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject shoppingCart;
     public TextMeshPro exitText;
+    public EndUI endUI;
     private int counterLokedAtList = 0;
     public bool trackTime = false;
     private float time = 0f;
@@ -93,9 +94,12 @@ public class GameManager : MonoBehaviour
         }
        
         Debug.Log("Round has ended");
-
+        exitText.enabled = false;
+        
+        
         exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
                          + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
+        endUI.OpenDoor();
         //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
         //calculate points
         GameState = GameStates.RoundHasEnded;
