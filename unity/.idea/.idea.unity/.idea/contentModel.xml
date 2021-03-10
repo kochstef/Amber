@@ -784,6 +784,7 @@
           <e p="ShoppingList.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="TeleportationPlayer.cs" t="Include" />
+          <e p="TextFieldItemEndUI.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

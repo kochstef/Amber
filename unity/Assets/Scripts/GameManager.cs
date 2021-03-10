@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private int counterLokedAtList = 0;
     public bool trackTime = false;
     private float time = 0f;
+    public bool test = false;
     
    public enum GameStates
     {
@@ -97,9 +98,11 @@ public class GameManager : MonoBehaviour
         exitText.enabled = false;
         
         
-        exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
-                         + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
+        //exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
+         //                + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
         endUI.OpenDoor();
+        endUI.ShowList(score.getCorrectItemsList(), score.getWrongItemsList(), score.GetTime());
+        
         //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
         //calculate points
         GameState = GameStates.RoundHasEnded;
@@ -115,6 +118,11 @@ public class GameManager : MonoBehaviour
         if (GameState == GameStates.RoundHasStartedState)
         {
             time += Time.deltaTime;
+        }
+
+        if (test)
+        {
+            endRound();
         }
     }
 }
