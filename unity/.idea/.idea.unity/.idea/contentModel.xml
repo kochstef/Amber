@@ -777,6 +777,7 @@
           <e p="Audio.cs" t="Include" />
           <e p="CalculateScore.cs" t="Include" />
           <e p="EndUI.cs" t="Include" />
+          <e p="EndUiLooksAtList.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="ParametersForGame.cs" t="Include" />
           <e p="Score.cs" t="Include" />

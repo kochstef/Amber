@@ -116,6 +116,7 @@ public class ShoppingList : MonoBehaviour
                 if (!listObject.activeSelf)
                 {
                     GameManager.Instance.IncrementCounterLookedAtList();
+                    GameManager.Instance.StartCountdownLookAtList();
                 }
 
                 animationObject.SetActive(false);
@@ -128,6 +129,7 @@ public class ShoppingList : MonoBehaviour
             if (countdownLookInterrupt < 0.0f)
             {
                 GameManager.Instance.TeleportEnabled = true;
+                GameManager.Instance.StopCountdownLookAtList();
                 animationObject.SetActive(false);
                 countdown = 0.0f;
                 listObject.SetActive(false);

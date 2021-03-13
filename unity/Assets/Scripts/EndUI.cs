@@ -12,6 +12,7 @@ public class EndUI : MonoBehaviour
     public float rotationSpeed = 0.05f;
     public bool openDoors = false;
     public GameObject itemListTextField;
+    public GameObject looksAtListTextField;
     public TextMeshPro timeText;
 
     private Quaternion toLeft;
@@ -24,7 +25,7 @@ public class EndUI : MonoBehaviour
         openDoors = true;
     }
 
-    public void ShowList(List<string> correctItemsList, List<string> wrongItemsList, float time)
+    public void ShowList(List<string> correctItemsList, List<string> wrongItemsList, float time, List<string> listLooksAtList)
     {
         GameObject lastItem = itemListTextField;
 
@@ -56,6 +57,28 @@ public class EndUI : MonoBehaviour
             lastItem.GetComponent<TextFieldItemEndUI>().SetWrongRight(false);
             first = false;
         }
+
+        
+        
+        if (listLooksAtList.Count == 0)
+        {
+            looksAtListTextField.SetActive(false);
+        }
+        
+        first = true;  
+        lastItem = looksAtListTextField;
+        foreach (var str in listLooksAtList)
+        {
+            if (!first)
+            {
+                lastItem = Instantiate(lastItem, transform);
+                lastItem.transform.position = new Vector3(lastItem.transform.position.x,
+                    lastItem.transform.position.y - 0.096f, lastItem.transform.position.z);
+            }
+            lastItem.GetComponent<EndUiLooksAtList>().SetText(str);
+            first = false;
+        }
+        
 
         string minSec = string.Format("{0}:{1:00}", (int) time / 60, (int) time % 60);
         SetTime(minSec);

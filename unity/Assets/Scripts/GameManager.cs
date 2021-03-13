@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public bool trackTime = false;
     private float time = 0f;
     public bool test = false;
+    private float countDownList = 0.0f;
+    private List<string> listLooksAtList;
     
    public enum GameStates
     {
@@ -34,7 +36,7 @@ public class GameManager : MonoBehaviour
         RoundHasEnded
     }
 
-    private GameStates _gameState = GameStates.ExplanationState;
+    public GameStates _gameState = GameStates.ExplanationState;
 
     public GameStates GameState
     {
@@ -67,6 +69,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         TeleportEnabled = false;
         ParametersForGame.InitParametersForGame(6);
+        listLooksAtList = new List<string>();
     }
 
     private void Start()
@@ -79,6 +82,23 @@ public class GameManager : MonoBehaviour
         ShoppingList.instance.SetText(ParametersForGame.Instance().GetItemsToCollect());
     }
 
+    public void StartCountdownLookAtList()
+    {
+        countDownList = time;
+    }
+
+    public void StopCountdownLookAtList()
+    {
+        if (countDownList > 0.01f)
+        {
+            countDownList = time - countDownList;
+            string timeLook = string.Format("{0}:{1:00}", (int) time / 60, (int) time % 60);
+            string timeFor = string.Format("{0}:{1:00}", (int) countDownList / 60, (int) countDownList % 60);
+            countDownList = 0.0f;
+            listLooksAtList.Add(timeLook + " for " + timeFor);
+        }
+    }
+    
 
     public void endRound()
     {
@@ -101,7 +121,7 @@ public class GameManager : MonoBehaviour
         //exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
          //                + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
         endUI.OpenDoor();
-        endUI.ShowList(score.getCorrectItemsList(), score.getWrongItemsList(), score.GetTime());
+        endUI.ShowList(score.getCorrectItemsList(), score.getWrongItemsList(), score.GetTime(), listLooksAtList);
         
         //  Debug.Log("you forgot " + score.GetForgottenItems() + "and have " + score.GetWrongItems() + "to much");
         //calculate points

@@ -75,7 +75,6 @@ public class TeleportationPlayer : MonoBehaviour
             stopSimpleAnimation();
             countdown = 0.0f;
         }
-
         countdownLookInterrupt -= Time.deltaTime;
 
         return null;
