@@ -715,8 +715,6 @@
               <e p="OVRTracker.cs" t="Include" />
               <e p="OVRXRSDKNative.cs" t="Include" />
               <e p="Util" t="Include">
-                <e p="GrabbableItem.cs" t="Include" />
-                <e p="HandGrabbingBehavior.cs" t="Include" />
                 <e p="HandItemSetup.cs" t="Include" />
                 <e p="ItemSetupManager.cs" t="Include" />
                 <e p="OVRAudioSourceTest.cs" t="Include" />
@@ -730,10 +728,7 @@
                 <e p="OVRDebugInfo.cs" t="Include" />
                 <e p="OVRGazePointer.cs" t="Include" />
                 <e p="OVRGearVrControllerTest.cs" t="Include" />
-                <e p="OVRGrabbable.cs" t="Include" />
-                <e p="OVRGrabber.cs" t="Include" />
                 <e p="OVRGridCube.cs" t="Include" />
-                <e p="OVRHand.cs" t="Include" />
                 <e p="OVRHandTest.cs" t="Include" />
                 <e p="OVRInputModule.cs" t="Include" />
                 <e p="OVRMesh.cs" t="Include" />
@@ -753,7 +748,6 @@
                 <e p="OVRResetOrientation.cs" t="Include" />
                 <e p="OVRSceneSampleController.cs" t="Include" />
                 <e p="OVRScreenFade.cs" t="Include" />
-                <e p="OVRSkeleton.cs" t="Include" />
                 <e p="OVRSkeletonRenderer.cs" t="Include" />
                 <e p="OVRSystemPerfMetrics.cs" t="Include" />
                 <e p="OVRVignette.cs" t="Include" />
@@ -779,6 +773,12 @@
           <e p="EndUI.cs" t="Include" />
           <e p="EndUiLooksAtList.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GrabbableItem.cs" t="Include" />
+          <e p="HandGrabbingBehavior.cs" t="Include" />
+          <e p="OVRGrabbable.cs" t="Include" />
+          <e p="OVRGrabber.cs" t="Include" />
+          <e p="OVRHand.cs" t="Include" />
+          <e p="OVRSkeleton.cs" t="Include" />
           <e p="ParametersForGame.cs" t="Include" />
           <e p="Score.cs" t="Include" />
           <e p="ShoppingCart.cs" t="Include" />
