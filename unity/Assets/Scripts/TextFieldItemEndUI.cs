@@ -7,13 +7,15 @@ using UnityEngine.UI;
 public class TextFieldItemEndUI : MonoBehaviour
 {
     // Start is called before the first frame update
+    public TextMeshProUGUI textMeshProUGUI;
     public TextMeshPro txt;
     public GameObject checkMark;
     public GameObject crossMark;
 
     public void SetText(string str)
     {
-        txt.text = str;
+        textMeshProUGUI.text = str;
+      //  txt.text = str;
     }
 
     public void SetWrongRight(bool right)

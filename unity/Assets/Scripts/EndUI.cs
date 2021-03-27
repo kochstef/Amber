@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,7 @@ public class EndUI : MonoBehaviour
     public GameObject itemListTextField;
     public GameObject looksAtListTextField;
     public TextMeshPro timeText;
-
+    public Transform spawnPositionItemList;
     private Quaternion toLeft;
 
     private Quaternion toRight;
@@ -28,15 +29,24 @@ public class EndUI : MonoBehaviour
     public void ShowList(List<string> correctItemsList, List<string> wrongItemsList, float time, List<string> listLooksAtList)
     {
         GameObject lastItem = itemListTextField;
-
+        lastItem.transform.position = spawnPositionItemList.transform.position;
+        float offset = 0.0f;
         bool first = true;
         foreach (var str in correctItemsList)
         {
             if (!first)
             {
                 lastItem = Instantiate(lastItem, transform);
-                lastItem.transform.position = new Vector3(lastItem.transform.position.x,
-                    lastItem.transform.position.y - 0.096f, lastItem.transform.position.z);
+                lastItem.transform.position = new Vector3(spawnPositionItemList.position.x,
+                    spawnPositionItemList.position.y + offset, spawnPositionItemList.position.z);
+                offset -= 0.096f;
+            }
+            else
+            {
+                lastItem = Instantiate(lastItem, transform);
+                lastItem.transform.position = new Vector3(spawnPositionItemList.position.x,
+                    spawnPositionItemList.position.y + offset, spawnPositionItemList.position.z);
+                offset -= 0.096f;
             }
 
             lastItem.GetComponent<TextFieldItemEndUI>().SetText(str);
@@ -50,8 +60,16 @@ public class EndUI : MonoBehaviour
             if (!first)
             {
                 lastItem = Instantiate(lastItem, transform);
-                lastItem.transform.position = new Vector3(lastItem.transform.position.x,
-                    lastItem.transform.position.y - 0.096f, lastItem.transform.position.z);
+                lastItem.transform.position = new Vector3(spawnPositionItemList.position.x,
+                    spawnPositionItemList.position.y + offset, spawnPositionItemList.position.z);
+                offset -= 0.096f;
+            }
+            else
+            {
+                lastItem = Instantiate(lastItem, transform);
+                lastItem.transform.position = new Vector3(spawnPositionItemList.position.x,
+                    spawnPositionItemList.position.y + offset, spawnPositionItemList.position.z);
+                offset -= 0.096f;
             }
             lastItem.GetComponent<TextFieldItemEndUI>().SetText(str);
             lastItem.GetComponent<TextFieldItemEndUI>().SetWrongRight(false);
