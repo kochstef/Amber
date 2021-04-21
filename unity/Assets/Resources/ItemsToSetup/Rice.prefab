@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8757362041405944396}
   - component: {fileID: 4840253881772976882}
   - component: {fileID: 6211382678617508965}
+  - component: {fileID: 3724061632511713137}
   m_Layer: 0
   m_Name: Rice
   m_TagString: Untagged
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 6211382678617508965}
+  - {fileID: 3724061632511713137}
   m_grabbedCollider: {fileID: 0}
   m_grabbedBy: {fileID: 0}
   _handPoseLeft: 
@@ -155,3 +156,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.21, z: 0.14}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &3724061632511713137
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8349293503926565106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.023784583
+  m_Center: {x: -0.00028031878, y: 0, z: 0}

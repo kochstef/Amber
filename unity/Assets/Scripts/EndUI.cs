@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class EndUI : MonoBehaviour
 {
+    
+    
+    
+    
     public Transform doorLeft;
     public Transform doorRight;
     public float rotationSpeed = 0.05f;
@@ -57,6 +61,7 @@ public class EndUI : MonoBehaviour
 
         foreach (var str in wrongItemsList)
         {
+
             if (!first)
             {
                 lastItem = Instantiate(lastItem, transform);

@@ -40,39 +40,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Items/orangeJuce.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Items/orangeJuce.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/textfieldItemList.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/textfieldItemList.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TextFieldItemEndUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TextFieldItemEndUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2e/2e62e9d4f21b20b39325770abeaed18d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4e/4eec61ec2654506556c65aefabedb7f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f49c0d61ecdf69e4742afc2fcc1d35e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6a/6aad1ac99fa363ee151d57e57a269695" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e8f94b9b9a4d145dba77cb2506d4f4d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c82a842ba6e2bfce5597461f1e3f3ae7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f1/f12f40dcc6d59720005c869ca7a3d57f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +180,8 @@
       <workItem from="1615590517309" duration="3149000" />
       <workItem from="1616017062020" duration="1567000" />
       <workItem from="1616019909015" duration="406000" />
-      <workItem from="1616878930303" duration="2132000" />
+      <workItem from="1616878930303" duration="2380000" />
+      <workItem from="1618229226567" duration="2386000" />
     </task>
     <servers />
   </component>
@@ -334,13 +304,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/EndUI.cs</url>
-          <line>87</line>
+          <line>92</line>
           <properties documentPath="C:\Users\Kocher\Desktop\Amber\unity\Assets\Scripts\EndUI.cs" initialLine="69">
             <startOffsets>
-              <option value="3061" />
+              <option value="3046" />
             </startOffsets>
             <endOffsets>
-              <option value="3097" />
+              <option value="3082" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
