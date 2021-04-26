@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 3484
+  controlID: 86
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 3601
+  controlID: 87
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 3602
+  controlID: 88
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,8 +329,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -478.5
     m_HBaseRangeMax: 478.5
-    m_VBaseRangeMin: -314
-    m_VBaseRangeMax: 314
+    m_VBaseRangeMin: -324.5
+    m_VBaseRangeMax: 324.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -347,11 +347,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 957
-      height: 628
+      height: 649
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 478.5, y: 314}
+    m_Translation: {x: 478.5, y: 324.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -359,9 +359,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -478.5
-      y: -314
+      y: -324.5
       width: 957
-      height: 628
+      height: 649
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 957, y: 649}
@@ -398,23 +398,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c4aff8ffc8aff8ffccaff8ffd0aff8ffd4aff8ffd8aff8ffe2aff8ffe8aff8ff8477faff8877faff8c77faff9077faff9477faff9877faffa277faffa877faffb648fbffb848fbffbe48fbffb64efbff4663fbffb26dfbff407bfbff8488fbfff888fbff6e89fbff94c1ffff30fbffffac4a0000a64b00002c2601002c56010026570100aa590100ba400200cc4e0200fa4e020034550200
+      m_SelectedIDs: 72d5ffff
+      m_LastClickedID: -10894
+      m_ExpandedIDs: c0c1ffff88d5ffff54e6ffff08fbffff244900001a4e0000944e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: OVRHandPrefab
-        m_OriginalName: OVRHandPrefab
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 157640
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.14001465, y: 0.04699707, z: -0.07199097}
+    m_Target: {x: 0.9548329, y: 0.5535932, z: 2.6980152}
     speed: 2
-    m_Value: {x: 0.14001465, y: 0.04699707, z: -0.07199097}
+    m_Value: {x: 0.9548329, y: 0.5535932, z: 2.6980152}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -509,13 +509,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.2599666, y: -0.3198748, z: 0.09179452, w: 0.9064938}
+    m_Target: {x: 0.088457234, y: -0.07189758, z: 0.0064534037, w: 0.99348605}
     speed: 2
-    m_Value: {x: 0.25995886, y: -0.31986526, z: 0.091791786, w: 0.9064668}
+    m_Value: {x: 0.0884646, y: -0.070405506, z: 0.0063205524, w: 0.99356794}
   m_Size:
-    m_Target: 0.11111051
+    m_Target: 1.4115107
     speed: 2
-    m_Value: 0.11111051
+    m_Value: 1.4115107
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -603,21 +603,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials
+    - Assets/Prefab
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Oculus/SampleFramework/Core/HandsInteraction/Materials
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kocher\Desktop\Amber\unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 628}
-    m_SelectedIDs: a86d0200
-    m_LastClickedID: 159144
-    m_ExpandedIDs: 00000000ec610000ee610000f0610000f2610000f4610000f8610000fe61000000620000026200005e63000064630000686300009a6300009c6300002a6900005e1e0100b01e0100b81e010000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 38620000
+    m_LastClickedID: 25144
+    m_ExpandedIDs: 00000000e8610000ea610000ec610000ee610000f0610000f2610000f4610000f8610000fa610000fc610000fe6100000062000032620000386200004e620000506200001c6700008e67000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ec610000ee610000f0610000f2610000f4610000f6610000f8610000fa610000fc610000fe61000000620000026200005e6300009663000000ca9a3b
+    m_ExpandedIDs: 00000000e8610000ea610000ec610000ee610000f0610000f2610000f4610000f6610000f8610000fa610000fc610000fe61000000620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
