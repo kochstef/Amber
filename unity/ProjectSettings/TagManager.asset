@@ -23,6 +23,7 @@ TagManager:
   - OrangeJuice
   - Salt
   - Rice
+  - Hand
   layers:
   - Default
   - TransparentFX

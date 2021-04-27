@@ -45,11 +45,26 @@ public class ShoppingCart : MonoBehaviour
         }
     }*/
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerExit(Collider other)
     {
         if (ParametersForGame.Instance().allItems.Contains(other.transform.tag))
         {
-            other.transform.parent = transform;
+            if (other.transform.parent == null || !other.transform.parent.CompareTag("Hand"))
+            {
+                other.transform.parent = null;
+            }
+        }
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (ParametersForGame.Instance().allItems.Contains(other.transform.tag))
+        {
+            if (other.transform.parent == null || !other.transform.parent.CompareTag("Hand"))
+            {
+                other.transform.parent = transform;
+            }
         }
     }
 

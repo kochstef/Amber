@@ -40,24 +40,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10d33b-ab3b-4365-89f3-4e847aa6251e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Avatar/Content/Prefabs/LocalAvatar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Avatar/Content/Prefabs/LocalAvatar.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_transparent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_transparent.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/13/13a4a63b9ce0d5eafd07314459307a60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/28/282d19a64346c307570b92e9af7f2612" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2f/2fd499aa1cf135877648d5c7b31b7dad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3c/3c7d0fc55362d93a17559c82837074d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4e/4e80862901f960ad52e3a0d593ff858a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5e/5e3f8fbd05d7856d473dd44c7e255662" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/63/639c237898a25da10c1a789263067808" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/81/818917af3230636617af93c02702090f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/85/85125793eaa92196f23786eaff90cb60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/87/870c990399ff5c523846bc6bd30b4788" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9c/9c081cd94f46686ec23a402ad6c565be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b3/b3d948442a9816c513c48efcb14667fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb5136dd197315b6619b3aa0ce734465" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/db/db6bc50fbdcced7c4173a3361c53d235" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e8afd437ed52e5105a3f3356fdd092f1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e9/e9ac0399b4c4baa5ea4935f28e9e5e1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ee/ee633b71231c90760e9ba4839b3931fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fb8e238190f79857e5dfa265408813ad" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorUserBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastBuild.buildreport" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/8c/8cd7c613bf844de3b80696e27a479d5e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Oculus.VR.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +112,6 @@
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/GrabbableItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabbable.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRGrabber.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/Avatar/Scripts/SetFloorLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ParametersForGame.cs" />
@@ -110,6 +128,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TextFieldItemEndUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EndUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OVRCustomSkeletonEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonTableBell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShoppingCart.cs" />
       </list>
     </option>
   </component>
@@ -202,6 +222,8 @@
       <workItem from="1619093097500" duration="1000" />
       <workItem from="1619093132391" duration="39000" />
       <workItem from="1619093191892" duration="300000" />
+      <workItem from="1619521394212" duration="694000" />
+      <workItem from="1619522262053" duration="1855000" />
     </task>
     <servers />
   </component>
