@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="IndexLaser.cs" t="Include" />
         <e p="laxer tree pkg" t="Include">
           <e p="README.txt" t="Include" />
         </e>
@@ -770,6 +771,7 @@
           <e p="EndUI.cs" t="Include" />
           <e p="EndUiLooksAtList.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GestureDetection.cs" t="Include" />
           <e p="GrabbableItem.cs" t="Include" />
           <e p="HandGrabbingBehavior.cs" t="Include" />
           <e p="HandItemSetup.cs" t="Include" />
