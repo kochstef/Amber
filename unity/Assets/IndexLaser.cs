@@ -18,7 +18,7 @@ public class IndexLaser : MonoBehaviour
     {
         if (index != null)
         {
-            Vector3[] pos = new Vector3[]{index.position, -index.right};
+            //Vector3[] pos = new Vector3[]{index.position, -index.right};
             lineRenderer.SetVertexCount(2);
             lineRenderer.SetPosition(0, index.position);
             lineRenderer.SetPosition(1, (index.right) * 20 + transform.position);
