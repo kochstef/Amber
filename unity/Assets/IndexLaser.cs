@@ -11,6 +11,7 @@ public class IndexLaser : MonoBehaviour
     
     void Start()
     {
+        lineRenderer.enabled = false;
         index = gameObject.transform.Find("Bones/Hand_Start/Hand_Index1/Hand_Index2/Hand_Index3/Hand_IndexTip");
     }
 
@@ -28,6 +29,7 @@ public class IndexLaser : MonoBehaviour
 
     public void renderTrue()
     {
+        if(!GameManager.Instance.TeleportEnabled) return;
         if (index != null)
         {
             render = true;
