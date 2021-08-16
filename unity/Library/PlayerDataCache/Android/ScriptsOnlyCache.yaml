@@ -1,7 +1,5 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - ReadmeEditor
     Assembly-CSharp.dll:
     - EndUI
     - EndUiLooksAtList
@@ -31,6 +29,7 @@ ScriptsOnlyBuild:
     - Readme
     - ShoppingCart
     - ShoppingList
+    - ShoppingListItems
     - TeleportPlayerByPointing
     - TeleportationPlayer
     - TextFieldItemEndUI
@@ -163,6 +162,8 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 12314}
+    - Class: 114
       Script: {instanceID: 12316}
     - Class: 114
       Script: {instanceID: 12318}
@@ -183,33 +184,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 12336}
+      Script: {instanceID: 12458}
     - Class: 114
-      Script: {instanceID: 12460}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 12552}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 12592}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12712}
     - Class: 114
-      Script: {instanceID: 12714}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12846}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 13006}
     - Class: 114
-      Script: {instanceID: 13008}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13158}
+      Script: {instanceID: 13358}
     - Class: 114
       Script: {instanceID: 13446}
     - Class: 114
@@ -389,6 +390,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -429,12 +436,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 4bc4346a71a8df53a6b106f68ef3a190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 0c05f2bfb402def3f0a85a62a2323c7f
@@ -797,7 +798,7 @@ ScriptsOnlyBuild:
     className: BoardPosition
   - hash:
       serializedVersion: 2
-      Hash: 5836a7eeb1febbc5175a0efeeea2ef1d
+      Hash: 432028ce9d0b957162e0197e98ddc528
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShoppingList
@@ -867,6 +868,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OvrAvatarSDKManager
+  - hash:
+      serializedVersion: 2
+      Hash: 9b93b1b15b569d5b33f556ebb58883ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShoppingListItems
   - hash:
       serializedVersion: 2
       Hash: e82c0521cdfe8cb6a168ef7208a98d4a
@@ -2604,4 +2611,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Shop.unity
-  playerPath: C:/Users/Kocher/Desktop/Amber/test.apk
+  playerPath: C:/Users/Kocher/Desktop/test.apk
