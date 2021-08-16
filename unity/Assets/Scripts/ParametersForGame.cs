@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Random = UnityEngine.Random;
 
 
@@ -19,6 +20,10 @@ public class ParametersForGame
     
     //a list of tags of the Items you can collect
     //if you add a item you need to add the tag here
+ 
+
+ 
+
     public List<string> allItems = new List<string>()
     {
         "Onion",
@@ -32,7 +37,8 @@ public class ParametersForGame
         "Salt",
         "Rice"
     };
-    private Dictionary<string, int> itemsToCollect = null;
+    
+    private Dictionary<string, int> itemsToCollect;
 
     
     //initializes the parameter for the games depending on the settings
@@ -52,7 +58,7 @@ public class ParametersForGame
     //the tags of the game objects in the list  
     private void RandomItemsToCollect(int amountOfItems)
     {
-        
+        //need to use index as key because string uses the pointer as key which leads to dublicates in dictionary
         itemsToCollect = new Dictionary<string, int>();
         int randomIndex;
         string item_name;
@@ -60,14 +66,14 @@ public class ParametersForGame
         {
             
             randomIndex = Random.Range(0, allItems.Count);
-            item_name = allItems[randomIndex];
-            if(itemsToCollect.ContainsKey(item_name))
+            //item_name = allItems[randomIndex];
+            if(itemsToCollect.ContainsKey(allItems[randomIndex]))
             {
-                itemsToCollect[item_name] = itemsToCollect[item_name] + 1;
+                itemsToCollect[allItems[randomIndex]] += 1;
             }
             else
             {
-                itemsToCollect.Add(item_name, 1); 
+                itemsToCollect.Add(allItems[randomIndex], 1); 
             }
         }
     }

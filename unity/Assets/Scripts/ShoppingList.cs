@@ -9,6 +9,7 @@ public class ShoppingList : MonoBehaviour
     //outsource all except the List things
 
     public static ShoppingList instance;
+    public ShoppingListItems shoppingListItems;
 
     // For showing the list------------------------------
     public GameObject listObject;
@@ -30,13 +31,14 @@ public class ShoppingList : MonoBehaviour
     //private Dictionary<string, int> itemsToCollect;
     //the shoppingcart to check if all items have been collected
     private GameObject shoppingCart;
-    
 
 
     //for the loading animation 
     public GameObject animationObject;
     private float scale_y_original;
     private float scale_z_original;
+    private bool buttonPushed = false;
+
 
     void Start()
     {
@@ -73,8 +75,9 @@ public class ShoppingList : MonoBehaviour
     //Sets the items in the dictonary to the Shopping list 
     public void SetText(Dictionary<string, int> itemsToCollect)
     {
-        string listText = ToPrettyString(itemsToCollect);
-        textmeshPro.SetText(listText);
+        shoppingListItems.setItemsAndAmount(itemsToCollect);
+        //string listText = ToPrettyString(itemsToCollect);
+        textmeshPro.SetText("");
         //textmeshPro.SetText(string.Join( "\n", itemsToCollect));
     }
 
@@ -141,14 +144,18 @@ public class ShoppingList : MonoBehaviour
 
     public void startRoundHandler()
     {
-        Debug.Log("button pushed");
-        GameManager.Instance.SetTextList();
-        // show timer on list
-        // 
-        // 
-        GameManager.Instance.GameState = GameManager.GameStates.RememberItemsState;
-        GameManager.Instance.TeleportEnabled = false;
-        button.SetActive(false);
+        if (!buttonPushed)
+        {
+            Debug.Log("button pushed");
+            GameManager.Instance.SetTextList();
+            // show timer on list
+            // 
+            // 
+            GameManager.Instance.GameState = GameManager.GameStates.RememberItemsState;
+            GameManager.Instance.TeleportEnabled = false;
+            button.SetActive(false);
+            buttonPushed = true;
+        }
 
         //listObject.SetActive(false);
     }

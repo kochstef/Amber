@@ -788,6 +788,7 @@
           <e p="Serializer.cs" t="Include" />
           <e p="ShoppingCart.cs" t="Include" />
           <e p="ShoppingList.cs" t="Include" />
+          <e p="ShoppingListItems.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="TeleportationPlayer.cs" t="Include" />
           <e p="TeleportPlayerByPointing.cs" t="Include" />

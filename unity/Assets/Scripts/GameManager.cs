@@ -105,8 +105,6 @@ public class GameManager : MonoBehaviour
        
         ShoppingCart shoppingCartScript = shoppingCart.GetComponent<ShoppingCart>();
         List<string> itemsInShoppingCart = shoppingCartScript.GetTagsChildren();
-
-
         Score score = CalculateScore.CalcScore(itemsInShoppingCart, ParametersForGame.Instance().GetItemsToCollect(),
             time, counterLokedAtList);
         foreach (var item in itemsInShoppingCart)
@@ -116,7 +114,6 @@ public class GameManager : MonoBehaviour
        
         Debug.Log("Round has ended");
         exitText.enabled = false;
-        
         
         //exitText.SetText("Forgotten: " + score.GetForgottenItems() + "\n Too much: " + score.GetWrongItems()
          //                + "\n Time: " + score.GetTime() + "\n Looks at list: " + score.GetLooksAtList());
