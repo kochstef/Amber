@@ -81,6 +81,12 @@ public class ShoppingList : MonoBehaviour
         //textmeshPro.SetText(string.Join( "\n", itemsToCollect));
     }
 
+    public void SetTime(float time)
+    {
+        string timeLook = string.Format("{0}:{1:00}", (int) time / 60, (int) time % 60);
+        textMeshProTime.text = timeLook;
+    }
+
     private string ToPrettyString(Dictionary<string, int> itemsToCollect)
     {
         string str = "";

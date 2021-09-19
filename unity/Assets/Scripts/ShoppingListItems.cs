@@ -8,10 +8,13 @@ public class ShoppingListItems : MonoBehaviour
 {
 
     public GameObject textField;
+    
     public float offset;
     public Vector3 positionFirstTextfield;
 
+
    
+
     // Start is called before the first frame update
     public void setItemsAndAmount(Dictionary<string, int> itemsToCollect)
     {
@@ -25,12 +28,12 @@ public class ShoppingListItems : MonoBehaviour
            Transform transformName = canvas.transform.Find("Item");
           // Transform transformAmount = canvas.transform.Find("Amount");
        //    TextMeshProUGUI name = canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-           TextMeshProUGUI[] name = canvas.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
+           TextMeshProUGUI[] textfileds = canvas.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
          //  TextMeshProUGUI amount = canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
 
            positionFirstTextfield.y -= offset;
-           name[0].text = item.Key;//item.Key;
-           name[1].text = item.Value.ToString();
+           textfileds[0].text = item.Key;//item.Key;
+           textfileds[1].text = item.Value.ToString();
           // TextMeshPro name1 = canvas.GetComponentInChildren<TMPro.TextMeshPro>();
            if (name == null)
            {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class CalculateScore
+
 {
     public static Score CalcScore(List<string> itemsCollected, Dictionary<string, int> itemsToCollect, float time,
         int counterLokedAtList)
