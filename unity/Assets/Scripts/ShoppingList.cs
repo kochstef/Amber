@@ -19,11 +19,10 @@ public class ShoppingList : MonoBehaviour
     public float timeToInterruptLookAtList = 0.1f;
     public GameObject button;
     float timeRemaining = 5f;
+    public GameObject explanation;
 
     //For filling the List-------------------------------
-    public TextMeshPro textmeshPro;
-
-    public TextMeshPro textMeshProTime;
+   // public TextMeshPro textmeshPro;
 
     //private List<string> allItems;
     //this later should go over the server depending on the level of the patient
@@ -77,17 +76,12 @@ public class ShoppingList : MonoBehaviour
     {
         shoppingListItems.setItemsAndAmount(itemsToCollect);
         //string listText = ToPrettyString(itemsToCollect);
-        textmeshPro.SetText("");
+       // textmeshPro.SetText("");
         //textmeshPro.SetText(string.Join( "\n", itemsToCollect));
     }
+    
 
-    public void SetTime(float time)
-    {
-        string timeLook = string.Format("{0}:{1:00}", (int) time / 60, (int) time % 60);
-        textMeshProTime.text = timeLook;
-    }
-
-    private string ToPrettyString(Dictionary<string, int> itemsToCollect)
+    /*private string ToPrettyString(Dictionary<string, int> itemsToCollect)
     {
         string str = "";
 
@@ -97,15 +91,15 @@ public class ShoppingList : MonoBehaviour
         }
 
         return str;
-    }
+    }*/
 
     private void ShowList()
     {
         Vector3 fwd = transform.TransformDirection(Vector3.left);
         // Debug.DrawLine(transform.position, fwd, Color.green);
         RaycastHit hit;
-        Debug.DrawRay(transform.position, -transform.forward, Color.green);
-        if (Physics.Raycast(transform.position, -transform.forward, out hit, 10) && hit.collider.CompareTag("Head"))
+        Debug.DrawRay(transform.position, transform.up, Color.green);
+        if (Physics.Raycast(transform.position, transform.up, out hit, 10) && hit.collider.CompareTag("Head"))
         {
             GameManager.Instance.TeleportEnabled = false;
 
@@ -160,6 +154,7 @@ public class ShoppingList : MonoBehaviour
             GameManager.Instance.GameState = GameManager.GameStates.RememberItemsState;
             GameManager.Instance.TeleportEnabled = false;
             button.SetActive(false);
+            explanation.SetActive(false);
             buttonPushed = true;
         }
 
@@ -191,12 +186,10 @@ public class ShoppingList : MonoBehaviour
                 GameManager.Instance.TeleportEnabled = true;
                 GameManager.Instance.GameState = GameManager.GameStates.RoundHasStartedState;
                 listObject.SetActive(false);
-                textMeshProTime.SetText("");
             }
             else
             {
                 // Debug.Log("Timer");
-                textMeshProTime.SetText(timeRemaining.ToString());
                 timeRemaining -= Time.deltaTime;
             }
         }

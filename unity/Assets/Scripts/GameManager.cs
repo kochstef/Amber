@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     public void SetTextList()
     {
-        ShoppingList.instance.SetText(ParametersForGame.Instance().GetItemsToCollect());
+       ShoppingList.instance.SetText(ParametersForGame.Instance().GetItemsToCollect());
     }
 
     public void StartCountdownLookAtList()

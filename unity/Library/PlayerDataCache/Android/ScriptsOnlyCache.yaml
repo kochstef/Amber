@@ -26,7 +26,6 @@ ScriptsOnlyBuild:
     - OculusSampleFramework.RayToolView
     - OculusSampleFramework.TrainButtonVisualController
     - OvrAvatarSettings
-    - Readme
     - ShoppingCart
     - ShoppingList
     - ShoppingListItems
@@ -798,7 +797,7 @@ ScriptsOnlyBuild:
     className: BoardPosition
   - hash:
       serializedVersion: 2
-      Hash: 432028ce9d0b957162e0197e98ddc528
+      Hash: 09df29dcdf803d37e9b28defefe390ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShoppingList

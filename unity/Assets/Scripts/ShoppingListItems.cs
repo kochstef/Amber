@@ -23,15 +23,15 @@ public class ShoppingListItems : MonoBehaviour
         {
            GameObject textfield = Instantiate(textField, transform);
            //textfield.transform.rotation = Quaternion.Euler(90, 0, 0);
-           textfield.transform.localPosition = new Vector3(positionFirstTextfield.x,positionFirstTextfield.y - offset, positionFirstTextfield.z);
+           textfield.transform.localPosition = new Vector3(positionFirstTextfield.x, positionFirstTextfield.y  , positionFirstTextfield.z);
            Canvas canvas = textfield.GetComponentInChildren<Canvas>();
-           Transform transformName = canvas.transform.Find("Item");
+           //Transform transformName = canvas.transform.Find("ItemName");
           // Transform transformAmount = canvas.transform.Find("Amount");
        //    TextMeshProUGUI name = canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
            TextMeshProUGUI[] textfileds = canvas.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
          //  TextMeshProUGUI amount = canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
 
-           positionFirstTextfield.y -= offset;
+           positionFirstTextfield.z -= offset;
            textfileds[0].text = item.Key;//item.Key;
            textfileds[1].text = item.Value.ToString();
           // TextMeshPro name1 = canvas.GetComponentInChildren<TMPro.TextMeshPro>();
