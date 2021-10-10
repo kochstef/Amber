@@ -7,6 +7,15 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.gear.languagemanager": {
+      "version": "https://github.com/GameLabGraz/Utilities.git#package/languagemanager",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.textmeshpro": "1.4.1"
+      },
+      "hash": "7fc6437d0111064c7b9a039279ba5133f34585a4"
+    },
     "com.unity.collab-proxy": {
       "version": "1.3.9",
       "depth": 0,

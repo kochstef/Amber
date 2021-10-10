@@ -9184,6 +9184,7 @@ MonoBehaviour:
   timeToShowShoppingList: 2
   timeToInterruptLookAtList: 0.1
   button: {fileID: 1501800035947749}
+  timeRemaining: 5
   explanation: {fileID: 0}
   animationObject: {fileID: 440555395}
 --- !u!1001 &486860988
@@ -31798,6 +31799,20 @@ PrefabInstance:
     - target: {fileID: 282404976546532924, guid: 8887972dd58759e45a8cdd11067d7bb9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.0008
+      objectReference: {fileID: 0}
+    - target: {fileID: 774632396724603223, guid: 8887972dd58759e45a8cdd11067d7bb9, type: 3}
+      propertyPath: m_text
+      value: "You have 5 seconds to remember the items on the list. \nYou can look
+        at the list again by looking at your left hand. To start the game press the
+        green button."
+      objectReference: {fileID: 0}
+    - target: {fileID: 774632396724603223, guid: 8887972dd58759e45a8cdd11067d7bb9, type: 3}
+      propertyPath: m_fontSize
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 774632396724603223, guid: 8887972dd58759e45a8cdd11067d7bb9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: 980544400334671963, guid: 8887972dd58759e45a8cdd11067d7bb9, type: 3}
       propertyPath: InteractableStateChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

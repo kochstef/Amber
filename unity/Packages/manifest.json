@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.gear.languagemanager": "https://github.com/GameLabGraz/Utilities.git#package/languagemanager",
     "com.unity.collab-proxy": "1.3.9",
     "com.unity.formats.fbx": "4.0.1",
     "com.unity.ide.rider": "1.2.1",

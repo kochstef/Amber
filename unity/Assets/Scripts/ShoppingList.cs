@@ -18,7 +18,7 @@ public class ShoppingList : MonoBehaviour
     private float countdownLookInterrupt;
     public float timeToInterruptLookAtList = 0.1f;
     public GameObject button;
-    float timeRemaining = 5f;
+    public float timeRemaining = 5f;
     public GameObject explanation;
 
     //For filling the List-------------------------------
