@@ -127,9 +127,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 1400677119535821130, guid: 872e3934c4b6a9f448bb7ca9273f2eaa, type: 2}
-  - {fileID: 11400000, guid: d5d7f00e5f50ce449934358e789ed641, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -685,9 +683,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: UNITY_POST_PROCESSING_STACK_V2
-    4: UNITY_POST_PROCESSING_STACK_V2
-    7: UNITY_POST_PROCESSING_STACK_V2;RH_AutoComplete
+    1: UNITY_POST_PROCESSING_STACK_V2;CROSS_PLATFORM_INPUT;RH_AutoComplete
+    4: UNITY_POST_PROCESSING_STACK_V2;CROSS_PLATFORM_INPUT
+    7: UNITY_POST_PROCESSING_STACK_V2;RH_AutoComplete;CROSS_PLATFORM_INPUT
     13: UNITY_POST_PROCESSING_STACK_V2
     14: UNITY_POST_PROCESSING_STACK_V2
     19: UNITY_POST_PROCESSING_STACK_V2
