@@ -59,6 +59,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Build cache
-unity/Library/PlayerDataCache/Android/
-unity/Library/PlayerDataCache/Win/
-unity/Library/Artifacts/
+#**/[Ll]ibrary/ 
